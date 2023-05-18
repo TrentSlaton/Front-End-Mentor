@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    font-family: 'Red Hat Display', sans-serif;
+
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: 70rem;
+    background-repeat: repeat-x;
+    background-color: var(--pale-blue);
+    background-position: top;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 16px;
+}
+
+#order_summary {
+    width: 24rem;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0.75rem 1.5rem hsla(224, 23%, 55%, 0.3);
+    margin: 1rem;
+}
+
+#order_summary img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.summary h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
+}
+
+.summary p {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.plan_summary {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    width: calc(100% - 1rem);
+    margin-bottom: 1.5rem;
+}
+
+.plan_summary img {
+    height: 2.5rem;
+    width: auto;
+    border-radius: 0 !important;
+    margin-right: -4rem;
+}
+
+.plan_summary .stack h2 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.plan_summary .stack h3 {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.plan_summary a {
+    color: var(--bright-blue);
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.plan_summary a:hover {
+    text-decoration: none;
+}
+
+.payment_button {
+    box-sizing: content-box;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    font-size: medium;
+    font-weight: 700;
+    width: calc(100% - 1rem);
+    margin-bottom: 1rem;
+    box-shadow: 0 0.5rem 1rem hsla(245, 75%, 52%, 0.4);
+}
+
+.payment_button:hover {
+    background-color: hsla(245, 75%, 52%, 0.75);
+    cursor: pointer;
+}
+
+.cancel_button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    font-size: small;
+}
+
+.cancel_button:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
