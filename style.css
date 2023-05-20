@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+    /* main background */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    /* card background */
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    /* accent */
+    --soft-violet: hsla(277, 64%, 61%, 0.4);
+
+    /* main heading, stats */
+    --white: hsl(0, 0%, 100%);
+    /* main paragraph */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* stat headings */
+    --slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+
+    --radius: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    background-color: var(--dark-desaturated-blue);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.stats h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+    line-height: 1.25em;
+}
+
+.stats span {
+    color: var(--soft-violet);
+}
+
+.stats>p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--slightly-transparent-white);
+    margin-bottom: 5rem;
+    line-height: 1.75em;
+}
+
+.stats_blurb {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: x-large;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.stats_blurb p {
+    color: var(--slightly-transparent-white2);
+    font-size: small;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+}
+
+.bg_image {
+    background: url(images/image-header-desktop.jpg);
+    width: 35rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.overlay {
+    background: var(--soft-violet);
+    height: 100%;
+}
