@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* paragraphs */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* background, headings, buttons */
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    --radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid red 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.vehicle {
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.vehicle img {
+    width: 5rem;
+    height: auto;
+    margin-bottom: -3.5rem;
+}
+
+.vehicle h1 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: -3.5rem;
+}
+
+.vehicle p {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.vehicle button {
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: var(--very-light-gray);
+    border-radius: 2rem;
+    height: 3rem;
+    width: 10rem;
+}
+
+.vehicle button:hover {
+    border: solid var(--transparent-white) 2px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.sedans p {
+    padding-right: 0.5rem;
+}
+
+.sedans button {
+    color: var(--bright-orange);
+}
+
+.sedans button:hover {
+    color: var(--transparent-white);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs p {
+    padding-right: 0.78rem;
+}
+
+.suvs button {
+    color: var(--dark-cyan);
+}
+
+.suvs button:hover {
+    color: var(--transparent-white);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+
+.luxury button:hover {
+    color: var(--transparent-white);
+}
+
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 425px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 375px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .vehicle {
+        height: 25rem;
+        padding: 2.5rem;
+    }
+
+    .vehicle img {
+        margin-bottom: 0;
+    }
+
+    .vehicle h1 {
+        margin-bottom: 0;
+    }
+
+    .sedans {
+        border-top-right-radius: var(--radius);
+        border-bottom-left-radius: 0;
+        margin-top: 1rem;
+    }
+
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
+        margin-bottom: 1rem;
+    }
+
+    .luxury p {
+        padding-right: 1rem;
+    }
+}
