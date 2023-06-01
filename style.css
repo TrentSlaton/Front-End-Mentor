@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --radius: 10px;
+}
+
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* :before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+  background-color: var(--light-gray);
+  display: grid;
+  place-items: center;
+}
+
+main {
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-areas:
+    "banner banner"
+    "sub why";
+}
+
+ul {
+  list-style-type: none;
+}
+
+.banner {
+  grid-area: banner;
+  width: 800px;
+  height: 280px;
+  background-color: white;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.banner > h2 {
+  color: var(--grayish-blue);
+  font-size: xx-large;
+}
+
+.banner > h3 {
+  color: var(--bright-yellow);
+  font-size: x-large;
+  font-weight: 700;
+  margin-bottom: -1.25rem;
+}
+
+.banner > p {
+  color: var(--cyan);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.sub {
+  grid-area: sub;
+  width: 400px;
+  height: 300px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-color: var(--grayish-blue);
+  border-bottom-left-radius: var(--radius);
+}
+
+.sub > h2 {
+  color: white;
+  font-size: x-large;
+}
+
+.sub > .price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.sub > .price > span {
+  color: var(--light-gray);
+  font-size: medium;
+  font-weight: 400;
+}
+
+.sub > p {
+  color: var(--light-gray);
+  font-size: large;
+  margin-top: -1rem;
+}
+
+.sub > .sign_up {
+  font-size: large;
+  font-weight: 700;
+  color: white;
+  background-color: var(--bright-yellow);
+  width: 100%;
+  height: 50px;
+  align-self: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  grid-area: why;
+  width: 400px;
+  height: 300px;
+  padding: 3rem;
+  background-color: var(--cyan);
+  border-bottom-right-radius: var(--radius);
+}
+
+.why > h2 {
+  color: white;
+  font-size: x-large;
+}
+
+.why > ul > li {
+  color: var(--light-gray);
+  font-weight: 400;
+  margin-top: 0.18rem;
+}
+
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .banner,
+  .sub,
+  .why {
+    width: 325px;
+    height: 280px;
+    padding: 1.75rem;
+  }
+
+  .banner {
+    margin-top: 1rem;
+  }
+
+  .banner > h2 {
+    font-size: x-large;
+  }
+
+  .banner > h3 {
+    font-size: large;
+  }
+
+  .banner > p {
+    line-height: 1.2rem;
+  }
+
+  .sub {
+    border-bottom-left-radius: 0;
+  }
+
+  .why {
+    border-bottom-left-radius: 10px;
+    margin-bottom: 1rem;
+  }
+}
