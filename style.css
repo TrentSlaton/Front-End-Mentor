@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  /* Primary */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --card1-verified: hsla(0, 0%, 100%, 0.5);
+  --card1-paragraph: hsla(0, 0%, 100%, 0.7);
+  --card2-verified: hsla(0, 0%, 100%, 0.5);
+  --card2-paragraph: hsla(0, 0%, 100%, 0.7);
+  --card3-verified: hsla(219, 29%, 14%, 0.5);
+  --card3-paragraph: hsla(219, 29%, 14%, 0.7);
+  --card4-verified: hsla(217, 19%, 35%, 0.5);
+  --card4-paragraph: hsla(217, 19%, 35%, 0.7);
+  --card5-verified: hsla(0, 0%, 100%, 0.5);
+  --card5-paragraph: hsla(0, 0%, 100%, 0.7);
+}
+
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+  background-color: var(--light-grayish-blue);
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card1 card1 card2 card3"
+    "card4 card5 card5 card3";
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0.5rem 0.5rem 20px rgba(0, 0, 0, 0.15);
+}
+
+.card > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card > p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.card1 {
+  grid-area: card1;
+  background-color: var(--moderate-violet);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 20% top;
+  background-size: 20%;
+}
+
+.card1 > .card_bio > h2 {
+  color: var(--white);
+}
+.card1 > .card_bio > h3 {
+  color: var(--card1-verified);
+}
+
+.card1 > h2 {
+  color: var(--white);
+}
+
+.card1 > p {
+  color: var(--card1-paragraph);
+}
+
+.card2 {
+  grid-area: card2;
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card2 > .card_bio > h2 {
+  color: var(--white);
+}
+
+.card2 > .card_bio > h3 {
+  color: var(--card2-verified);
+}
+
+.card2 > h2 {
+  color: var(--white);
+}
+
+.card2 > p {
+  color: var(--card2-paragraph);
+}
+
+.card3 {
+  grid-area: card3;
+  background-color: var(--white);
+}
+
+.card3 > .card_bio > h2 {
+  color: var(--very-dark-blackish-blue);
+}
+
+.card3 > .card_bio > h3 {
+  color: var(--card3-verified);
+}
+
+.card3 > h2 {
+  color: var(--very-dark-blackish-blue);
+}
+
+.card3 > p {
+  color: var(--card3-paragraph);
+}
+
+.card4 {
+  grid-area: card4;
+  background-color: var(--white);
+}
+
+.card4 > .card_bio > h2 {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card4 > .card_bio > h3 {
+  color: var(--card4-verified);
+}
+
+.card4 > h2 {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card4 > p {
+  color: var(--card4-paragraph);
+}
+
+.card5 {
+  grid-area: card5;
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.card5 > .card_bio > h2 {
+  color: var(--white);
+}
+
+.card5 > .card_bio > h3 {
+  color: var(--card5-verified);
+}
+
+.card5 > h2 {
+  color: var(--white);
+}
+
+.card5 > p {
+  color: var(--card5-paragraph);
+}
+
+.card_bio {
+  display: grid;
+  grid-template-columns: 56px;
+  grid-template-areas:
+    "image name"
+    "image verified";
+  margin-bottom: 1em;
+}
+
+.card_bio > img {
+  grid-area: image;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.card_bio > h2 {
+  grid-area: name;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card_bio > h3 {
+  grid-area: verified;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 1rem;
+  }
+}
