@@ -1,0 +1,16 @@
+body {
+    display: table;
+    width: 100%;
+    /* Needed for horizontal centering. */
+    text-align: center;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card {
+    /* Needed to center div. Block level will not center properly. */
+    display: inline-block;
+}
