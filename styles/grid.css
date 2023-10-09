@@ -7,3 +7,9 @@ body {
 .card {
     text-align: center;
 }
+
+@media (max-width: 300px) {
+    body {
+        justify-content: start; /* Default value. */
+    }
+}

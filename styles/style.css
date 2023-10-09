@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-    --white: hsl(0, 0%, 100%);
-    --light-gray: hsl(212, 45%, 89%);
-    --grayish-blue: hsl(220, 15%, 55%);
-    --dark-blue: hsl(218, 44%, 22%);
+    --white: hsla(0, 0%, 100%, 1);
+    --light-gray: hsla(212, 45%, 89%, 1);
+    --grayish-blue: hsla(220, 15%, 55%, 1);
+    --dark-blue: hsla(218, 44%, 22%, 1);
 }
 
 * {
@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     background-color: var(--light-gray);
 
-    /* Extended by: table.css, position.css,  */
+    /* Extended by: table.css, flexbox.css, grid.css */
 }
 
 .card {
@@ -27,9 +27,9 @@ body {
     background-color: var(--white);
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px rgba(0 0 0 / 0.1);
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.1);
 
-    /* Extended by: table.css, position.css,  */
+    /* Extended by: table.css, position.css, flexbox.css, grid.css  */
 }
 
 .card img {
