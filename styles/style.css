@@ -36,8 +36,8 @@
 * {
     box-sizing: border-box;
     font-family: "Hanken Grotesk", sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
@@ -53,10 +53,9 @@ p {
 }
 
 .results_and_summary_card {
-    background-color: var(--white);
     min-width: 300px;
     max-width: 900px;
-    /* width: 300px; */
+    background-color: var(--white);
     border-radius: 20px;
     box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.1);
 
@@ -66,8 +65,8 @@ p {
 .results,
 .summary {
     min-width: 300px;
-    border-radius: 20px;
     padding: 30px;
+    border-radius: 20px;
 
     /* Extended by: table.css,  */
 }
@@ -87,8 +86,6 @@ p {
     height: 10rem;
     background: linear-gradient(var(--violet-blue), var(--persian-blue));
     border-radius: 50%;
-    margin: auto;
-    margin-bottom: 1.5rem;
 
     /* Extended by: table.css,  */
 }
@@ -124,12 +121,21 @@ p {
 .summary_breakdown {
     list-style-type: none;
     width: 100%;
-    border-radius: 7px;
     font-weight: var(--bold);
+    border-radius: 7px;
 }
 
-.reaction div.left_section {
+.reaction {
+    background-color: var(--light-red-alpha);
+}
+
+.reaction .left_section {
     color: var(--light-red);
+}
+
+img {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .right_section span {
@@ -140,53 +146,44 @@ p {
     color: var(--green-teal);
 }
 
-.reaction {
-    background-color: var(--light-red-alpha);
-}
-
-.memory div.left_section {
-    color: var(--orangey-yellow);
-}
-
 .memory {
     background-color: var(--orangey-yellow-alpha);
 }
 
-.verbal div.left_section {
-    color: var(--green-teal);
+.memory .left_section {
+    color: var(--orangey-yellow);
 }
 
 .verbal {
     background-color: var(--green-teal-alpha);
 }
 
-.visual div.left_section {
-    color: var(--cobalt-blue);
+.verbal .left_section {
+    color: var(--green-teal);
 }
 
 .visual {
     background-color: var(--cobalt-blue-alpha);
 }
 
-img {
-    width: 1.5rem;
-    height: 1.5rem;
+.visual .left_section {
+    color: var(--cobalt-blue);
 }
 
 button {
+    width: 100%;
     background-color: var(--dark-gray-blue);
     color: var(--pale-blue);
     font-size: 0.9rem;
-    border-radius: 2rem;
-    width: 100%;
     font-weight: var(--medium);
     padding: 1rem;
     border: none;
+    border-radius: 2rem;
 }
 
 button:hover {
-    background-color: var(--cobalt-blue);
     cursor: pointer;
+    background-color: var(--cobalt-blue);
 }
 
 @media (max-width: 600px) {

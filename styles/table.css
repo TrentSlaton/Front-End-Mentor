@@ -22,6 +22,8 @@ main {
 
 .circle {
     display: table;
+    margin: auto;
+    margin-bottom: 1.5rem;
 }
 
 .result {
