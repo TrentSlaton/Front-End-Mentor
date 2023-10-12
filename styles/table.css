@@ -27,8 +27,6 @@ main {
 }
 
 .result {
-    /* display: table; */
-    /* vertical-align: middle; */
     /* Couldn't figure out how to make the table-cell elements stack vertically how I wanted, so i used margin-top as a positioning hack. */
     margin-top: 2rem;
 }
@@ -51,16 +49,13 @@ li {
 }
 
 .left_section {
-    /* display: table-cell; */
     display: table;
     text-align: left;
-    vertical-align: middle;
 }
 
 img {
     display: table;
     margin-right: 5px;
-    /* vertical-align: middle; */
 }
 
 .left_section span {
