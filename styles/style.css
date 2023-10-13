@@ -53,8 +53,8 @@ p {
 }
 
 .results_and_summary_card {
-    min-width: 300px;
-    max-width: 900px;
+    min-width: 18.75rem;
+    max-width: 56.25rem;
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.1);
