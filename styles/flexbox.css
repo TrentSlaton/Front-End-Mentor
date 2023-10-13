@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results_and_summary_card {
+    display: flex;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+}
+
+.results_header {
+    align-self: center;
+}
+
+.circle {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+    align-self: center;
+}
+
+.percentile {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.left_section,
+.right_section {
+    display: flex;
+    align-items: center;
+}
+
+pre {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    body {
+        /* display: table is superior to this because it achieves the same effect but is able to be centered. You could fiddle your way to a close-enough solution with multiple media queries though... */
+        justify-content: flex-start;
+    }
+
+    .results_and_summary_card {
+        flex-direction: column;
+    }
+}
