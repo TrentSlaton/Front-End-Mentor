@@ -2,6 +2,8 @@
 
 clean up directory and file structure
 
+set up github project page
+
 describe goals and motivations (layout methods)
 
 screenshots
