@@ -1,0 +1,68 @@
+.results_and_summary_card {
+    /* border: 1px red solid; */
+    max-width: 650px;
+    margin: auto;
+}
+
+.results_and_summary_card::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.results {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.circle {
+    padding-top: 2rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.result {
+}
+
+.percentile {
+    margin: auto;
+}
+
+.summary {
+    float: right;
+    width: 50%;
+}
+
+ul {
+    margin-bottom: 1.5rem;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 7px;
+}
+
+.left_section {
+    float: left;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.right_section {
+    float: right;
+}
+
+pre {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    .results,
+    .summary {
+        float: none;
+        margin: auto;
+    }
+}
