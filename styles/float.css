@@ -1,0 +1,34 @@
+.product_card {
+    margin: auto;
+    overflow: hidden;
+}
+
+.image_section,
+.summary_section {
+    width: 50%;
+}
+
+.image_section {
+    float: left;
+}
+
+.summary_section {
+    float: right;
+}
+
+.main_image {
+    max-width: 100%;
+}
+
+.price_section {
+    overflow: hidden;
+}
+
+.discount-price {
+    float: left;
+}
+
+.original-price {
+    float: right;
+    margin-right: 3rem;
+}
