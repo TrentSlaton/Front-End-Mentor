@@ -1,0 +1,39 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.product_card {
+    display: table;
+    margin: 0 auto;
+}
+
+.image_section,
+.summary_section {
+    display: table-cell;
+    width: 50%;
+    /* Annoying that I need to use this... see what happens when you comment out  vertical-align: middle... this makes it so that I need to fiddle-fuck margins to get things to align the way I want... or just leave it vertically aligned... */
+    vertical-align: middle;
+}
+
+.image_section img {
+    max-width: 100%;
+}
+
+.price_section {
+    display: table;
+}
+
+.discount-price {
+    display: table-cell;
+}
+
+.original-price {
+    display: table-cell;
+    vertical-align: middle;
+}
