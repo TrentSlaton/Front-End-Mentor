@@ -24,7 +24,7 @@ main {
 }
 
 .main_image {
-    max-width: 100%;
+    width: 100%;
 }
 
 header,
@@ -46,4 +46,25 @@ p,
     display: table-cell;
     vertical-align: middle;
     padding-left: 1rem;
+}
+
+@media (max-width: 620px) {
+    .product_card {
+        width: 90vw;
+        margin-top: min(1rem, 1vh);
+    }
+    .image_section,
+    .summary_section {
+        display: block;
+        width: 100%;
+    }
+
+    .image_section {
+        max-height: 50vh;
+    }
+
+    .main_image {
+        max-height: 50vh;
+        object-fit: cover;
+    }
 }
