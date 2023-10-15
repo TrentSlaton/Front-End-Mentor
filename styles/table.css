@@ -17,23 +17,33 @@ main {
 .summary_section {
     display: table-cell;
     width: 50%;
-    /* Annoying that I need to use this... see what happens when you comment out  vertical-align: middle... this makes it so that I need to fiddle-fuck margins to get things to align the way I want... or just leave it vertically aligned... */
+}
+
+.image_section {
     vertical-align: middle;
 }
 
-.image_section img {
+.main_image {
     max-width: 100%;
+}
+
+header,
+h1,
+p,
+.price_section {
+    margin-bottom: 1.75rem;
 }
 
 .price_section {
     display: table;
 }
 
-.discount-price {
+.discount_price {
     display: table-cell;
 }
 
-.original-price {
+.original_price {
     display: table-cell;
     vertical-align: middle;
+    padding-left: 1rem;
 }
