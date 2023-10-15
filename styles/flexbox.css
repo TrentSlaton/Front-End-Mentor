@@ -6,11 +6,11 @@ body {
 
 .product_card {
     display: flex;
+    height: 100%;
 }
 
 .image_section,
 .summary_section {
-    /* flex: 1; */
     flex-basis: 50%;
 }
 
