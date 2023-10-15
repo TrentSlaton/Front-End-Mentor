@@ -79,14 +79,14 @@ body {
     margin-bottom: 1rem;
 }
 
-.discount-price {
+.discount_price {
     color: var(--dark-cyan);
     font-family: "Fraunces";
     font-size: 1.75rem;
     font-weight: 700;
 }
 
-.original-price {
+.original_price {
     color: var(--dark-grayish-blue);
     font-family: "Montserrat";
     font-weight: 500;
