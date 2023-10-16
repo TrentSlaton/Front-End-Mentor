@@ -50,8 +50,8 @@ p,
 
 @media (max-width: 620px) {
     .product_card {
-        width: 90vw;
-        margin-top: min(1rem, 1vh);
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
     }
     .image_section,
     .summary_section {
@@ -66,5 +66,6 @@ p,
     .main_image {
         max-height: 50vh;
         object-fit: cover;
+        object-position: 100% 30%;
     }
 }
