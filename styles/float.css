@@ -6,6 +6,7 @@
 .image_section,
 .summary_section {
     width: 50%;
+    height: 100%;
 }
 
 .image_section {
@@ -17,18 +18,44 @@
 }
 
 .main_image {
-    max-width: 100%;
+    width: 100%;
+}
+
+/* Compare this section to table.css. Interesting... */
+header,
+h1,
+.summary_section > p,
+.price_section {
+    margin-bottom: 1.8rem;
 }
 
 .price_section {
     overflow: hidden;
 }
 
-.discount-price {
+.discount_price {
     float: left;
+    margin-right: 1rem;
 }
 
-.original-price {
-    float: right;
+.original_price {
+    margin-top: 0.5rem;
     margin-right: 3rem;
+}
+
+@media (max-width: 620px) {
+    .product_card {
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+    .image_section,
+    .summary_section {
+        width: 100%;
+    }
+
+    .main_image {
+        max-height: 50vh;
+        object-fit: cover;
+        object-position: 100% 30%;
+    }
 }
