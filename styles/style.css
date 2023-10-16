@@ -29,8 +29,6 @@ body {
 .product_card {
     width: 38rem;
     min-width: 300px;
-    /* height: 26rem; */
-    height: 100%;
     background-color: var(--white);
     border-radius: 10px;
 }
@@ -43,6 +41,14 @@ body {
 
 .summary_section {
     padding: 2rem;
+}
+
+header,
+h1,
+.summary_section > p,
+.price_section {
+    /* Was margin-bottom: 1.75rem; It did give expected results, but when looking at this section in float.css, .summary_section was a few pixels short. So it would seem that display: table-cell and float cause the content to be filled out differently. Also, I had to specifically select the <p> tag in float.css since it was applying margin-bottom to every <p> tag, not just the direct child of .summary_section like it was doing in table.css... I think it has to do with the fact that .price_section is a display: table-cell... */
+    margin-bottom: 1.8rem;
 }
 
 .summary_section header {

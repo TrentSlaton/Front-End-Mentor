@@ -27,13 +27,6 @@
     right: 0;
 }
 
-header,
-h1,
-.summary_section > p,
-.price_section {
-    margin-bottom: 1.8rem;
-}
-
 .price_section {
     position: relative;
     /* A limitation: manually setting the height. A better solution would be to set .discount-price and .original-price to display: inline... but the point of this is to use position in order to find its capabilities and limitations. I don't know of another way to make .price_section not collapse to 0 height... I tried overflow: hidden but it didn't do what I wanted. */

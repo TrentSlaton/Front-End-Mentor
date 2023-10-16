@@ -6,7 +6,6 @@
 .image_section,
 .summary_section {
     width: 50%;
-    height: 100%;
 }
 
 .image_section {
@@ -19,14 +18,6 @@
 
 .main_image {
     width: 100%;
-}
-
-/* Compare this section to table.css. Interesting... */
-header,
-h1,
-.summary_section > p,
-.price_section {
-    margin-bottom: 1.8rem;
 }
 
 .price_section {

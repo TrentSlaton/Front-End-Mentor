@@ -6,23 +6,33 @@ body {
 .product_card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: auto;
 }
 
 .main_image {
     width: 100%;
-    height: auto;
-}
-
-.summary_section {
-    /* Use these properties in combination with margins for exact positioning. */
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 0.5rem;
 }
 
 .price_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 620px) {
+    .product_card {
+        grid-template-columns: 1fr;
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+
+    .main_image {
+        max-height: 50vh;
+        object-fit: cover;
+        object-position: 100% 30%;
+    }
+
+    .price_section {
+        grid-template-columns: auto 1fr;
+    }
 }
