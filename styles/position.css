@@ -1,0 +1,56 @@
+/* WARNING: position does NOT handle responsiveness and accessibility well. Use with caution! */
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.price_time {
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+}
+
+.price > img,
+.price > span,
+.time > img,
+.time > span {
+    vertical-align: middle;
+}
+
+.creator_blurb > img {
+    vertical-align: middle;
+}
+
+.creator_blurb > p {
+    display: inline;
+}
+
+/* This handles responsiveness, but not accessibility... */
+
+@media (max-height: 558px) {
+    .card {
+        top: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 300px) {
+    .card {
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 300px) and (max-height: 558px) {
+    .card {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
