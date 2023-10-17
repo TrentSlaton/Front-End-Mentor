@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+    /* Primary Colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral Colors */
+    --very-dark-blue-main-background: hsl(217, 54%, 11%);
+    --very-dark-blue-card-background: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font-Weights */
+    --font-weight-light: 300;
+    --font-weight-medium: 400;
+    --font-weight-heavy: 600;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100svh;
+    background-color: var(--very-dark-blue-main-background);
+}
+
+.card {
+    min-width: 300px;
+    max-width: 22rem;
+    background-color: var(--very-dark-blue-card-background);
+    border-radius: 10px;
+}
+
+.product_showcase > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product_blurb > h1 {
+    color: var(--white);
+    font-weight: var(--font-weight-heavy);
+}
+
+.product_blurb > p {
+    color: var(--soft-blue);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-light);
+}
+
+.price_time > span {
+    color: var(--cyan);
+    font-weight: var(--font-weight-heavy);
+}
+
+.time > span {
+    color: var(--soft-blue);
+    font-weight: var(--font-weight-medium);
+}
+
+hr {
+    border-color: var(--very-dark-blue-line);
+    border-top: hidden;
+}
+
+.creator_blurb > img {
+    width: 2.2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator_blurb > p {
+    color: var(--soft-blue);
+    font-weight: var(--font-weight-light);
+}
+
+.creator_blurb > p > span {
+    color: var(--white);
+    font-weight: var(--font-weight-light);
+}
