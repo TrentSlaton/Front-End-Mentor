@@ -2,16 +2,6 @@
     margin: auto;
 }
 
-.price_time {
-    /* Create new block formatting context. */
-    overflow: hidden;
-}
-
-.creator_blurb {
-    /* Create new block formatting context. */
-    overflow: hidden;
-}
-
 .price > img,
 .price > span,
 .time > img,
