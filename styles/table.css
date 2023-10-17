@@ -9,31 +9,17 @@ main {
 }
 
 .card {
-    /* display: table; */
-    padding: 1.5rem;
-    margin: 0 auto;
-}
-
-.product_showcase > img {
-    display: block;
-    margin-bottom: 1.5rem;
-}
-
-.product_blurb > h1,
-.product_blurb > p {
-    margin-bottom: 1.5rem;
+    margin: auto;
 }
 
 .price_time {
     display: table;
     width: 100%;
-    margin-bottom: 1.5rem;
 }
 
-.price_time img {
-    width: 1rem;
+.price > img,
+.time > img {
     vertical-align: middle;
-    margin-right: 0.5rem;
 }
 
 .price {
@@ -47,10 +33,6 @@ main {
     text-align: right;
 }
 
-hr {
-    margin-bottom: 1.5rem;
-}
-
 .creator_blurb {
     display: table;
 }
@@ -59,8 +41,4 @@ hr {
 .creator_blurb > p {
     display: table-cell;
     vertical-align: middle;
-}
-
-.creator_blurb > img {
-    margin-right: 1rem;
 }
