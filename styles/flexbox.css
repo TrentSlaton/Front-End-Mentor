@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price > img,
+.price > span,
+.time > img,
+.time > span {
+    vertical-align: middle;
+}
+
+.creator_blurb {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 300px) {
+    body {
+        justify-content: flex-start;
+    }
+}
