@@ -1,0 +1,67 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.stats_card {
+    display: table;
+    margin: auto;
+}
+
+.stats_section,
+.image_section {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.stats_blurb {
+    display: table;
+    width: 100%;
+}
+
+.stats_blurb > * {
+    display: table-cell;
+}
+
+@media (max-width: 700px) {
+    .stats_card {
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+
+    .stats_section,
+    .image_section {
+        display: block;
+        width: 100%;
+    }
+
+    .stats_section {
+        border-top-right-radius: 10px;
+    }
+
+    .image_section {
+        /* display: table ignores order property... it is not possible to get the image on top of the other content using only display: table without rearranging the html... */
+        /* order: -1; */
+        height: 50vh;
+        max-height: 200px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .image_section > img {
+        object-position: 100% 10%;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 10px;
+    }
+
+    .overlay {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
