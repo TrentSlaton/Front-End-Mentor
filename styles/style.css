@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 :root {
-    font-family: 'Red Hat Display', sans-serif;
-
     /* Primary */
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
@@ -14,62 +12,53 @@
 }
 
 * {
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
     padding: 0;
     margin: 0;
 }
 
-main {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(images/pattern-background-desktop.svg);
-    background-size: 70rem;
-    background-repeat: repeat-x;
-    background-color: var(--pale-blue);
+body {
+    /* min-height: 100vh; */
+    min-height: 100svh;
+    background-size: 1120px;
     background-position: top;
+    background-color: var(--pale-blue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
 }
 
 img {
-    width: 100%;
-    height: auto;
-}
-
-p {
-    font-size: 16px;
+    display: block;
 }
 
 #order_summary {
-    width: 24rem;
-    height: auto;
+    min-width: 300px;
+    max-width: 24rem;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 0.75rem 1.5rem hsla(224, 23%, 55%, 0.3);
-    margin: 1rem;
+    box-shadow: 0 10px 15px hsla(224, 23%, 55%, 0.3);
 }
 
-#order_summary img {
+#order_summary > img {
+    width: 100%;
+    object-fit: contain;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .summary {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 2.5rem;
 }
 
-.summary h1 {
+.summary > h1 {
     color: var(--dark-blue);
-    font-weight: 900;
     font-size: 1.75rem;
+    font-weight: 900;
     margin-bottom: 1.5rem;
-    margin-top: -1rem;
 }
 
-.summary p {
+.summary > p {
     color: var(--desaturated-blue);
     font-weight: 500;
     text-align: center;
@@ -77,59 +66,51 @@ p {
 }
 
 .plan_summary {
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--very-pale-blue);
+    padding: 1.25rem;
     border-radius: 10px;
-    width: calc(100% - 1rem);
     margin-bottom: 1.5rem;
 }
 
-.plan_summary img {
-    height: 2.5rem;
+.plan_summary > img {
     width: auto;
-    border-radius: 0 !important;
-    margin-right: -4rem;
+    height: 2.5rem;
 }
 
-.plan_summary .stack h2 {
+.stack > h2 {
     color: var(--dark-blue);
-    font-weight: 900;
     font-size: 1rem;
+    font-weight: 900;
     margin-bottom: 0.25rem;
 }
 
-.plan_summary .stack h3 {
+.stack > p {
     color: var(--desaturated-blue);
-    font-weight: 500;
     font-size: 1rem;
+    font-weight: 500;
 }
 
-.plan_summary a {
+.plan_summary > a {
     color: var(--bright-blue);
+    font-size: 0.85rem;
     font-weight: 900;
-    font-size: 0.9rem;
 }
 
-.plan_summary a:hover {
+.plan_summary > a:hover {
     text-decoration: none;
 }
 
 .payment_button {
-    box-sizing: content-box;
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-size: medium;
+    font-weight: 700;
     padding: 1rem;
     border: none;
     border-radius: 10px;
-    color: var(--very-pale-blue);
-    background-color: var(--bright-blue);
-    font-size: medium;
-    font-weight: 700;
-    width: calc(100% - 1rem);
     margin-bottom: 1rem;
-    box-shadow: 0 0.5rem 1rem hsla(245, 75%, 52%, 0.4);
+    box-shadow: 0 8px 16px hsla(245, 75%, 52%, 0.4);
 }
 
 .payment_button:hover {
@@ -138,11 +119,11 @@ p {
 }
 
 .cancel_button {
-    border: none;
     background-color: rgba(0, 0, 0, 0);
     color: var(--desaturated-blue);
-    font-weight: 900;
     font-size: small;
+    font-weight: 900;
+    border: none;
 }
 
 .cancel_button:hover {
