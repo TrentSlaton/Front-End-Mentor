@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.plan_summary {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan_summary > a {
+    justify-self: right;
+}
