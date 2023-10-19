@@ -1,32 +1,27 @@
-body {
-    display: table;
-    width: 100%;
-}
-
-main {
-    display: table-cell;
-    vertical-align: middle;
-}
+/* A mess. I cannot seem to get a proper float layout due to the use of postion on the overlay... float is just bad for layouts generaly I think. */
 
 .stats_card {
-    display: table;
     margin: auto;
 }
 
 .stats_section,
 .image_section {
-    display: table-cell;
     width: 50%;
-    vertical-align: middle;
 }
 
-.stats_blurb {
-    display: table;
-    width: 100%;
+.stats_section {
+    float: left;
 }
 
-.stats_blurb > * {
-    display: table-cell;
+.image_section {
+    float: right;
+}
+
+.companies,
+.templates,
+.queries {
+    float: left;
+    margin-right: 2rem;
 }
 
 @media (max-width: 700px) {
@@ -37,7 +32,6 @@ main {
 
     .stats_section,
     .image_section {
-        display: block;
         width: 100%;
     }
 
@@ -47,8 +41,6 @@ main {
     }
 
     .image_section {
-        /* display: table ignores order property... it is not possible to get the image on top of the other content using only display: table without rearranging the html... */
-        /* order: -1; */
         height: 50vh;
         max-height: 200px;
         border-bottom-left-radius: 10px;

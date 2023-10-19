@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats_card {
+    display: flex;
+}
+
+.stats_section,
+.image_section {
+    flex: 1;
+}
+
+.image_section {
+    height: auto;
+}
+.image_section > img {
+    position: static;
+}
