@@ -1,0 +1,26 @@
+.vehicle_card {
+    margin: auto;
+    overflow: hidden;
+}
+
+.vehicle {
+    width: 33.33%;
+}
+
+.sedans,
+.suvs {
+    float: left;
+}
+
+.luxury {
+    float: right;
+}
+
+@media (max-width: 800px) {
+    .sedans,
+    .suvs,
+    .luxury {
+        clear: both;
+        width: auto;
+    }
+}
