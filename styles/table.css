@@ -1,0 +1,39 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vehicle_card {
+    display: table;
+    margin: auto;
+}
+
+.vehicle {
+    display: table-cell;
+}
+
+@media (max-width: 800px) {
+    .vehicle_card {
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+    .vehicle {
+        display: block;
+        width: 100%;
+    }
+
+    .sedans {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: unset;
+    }
+
+    .luxury {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 10px;
+    }
+}
