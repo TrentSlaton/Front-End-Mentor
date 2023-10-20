@@ -71,7 +71,8 @@ hr {
 }
 
 .stats {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    margin-bottom: 1.5rem;
 }
 
 .stats h3 {
