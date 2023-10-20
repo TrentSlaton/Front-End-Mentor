@@ -1,0 +1,50 @@
+.card_section {
+    display: table;
+    margin: auto;
+}
+
+.left_column,
+.center_column,
+.right_column {
+    display: table-cell;
+}
+
+.left_column,
+.right_column {
+    vertical-align: middle;
+}
+
+.center_column {
+    padding: 0 2rem;
+}
+
+.card2 {
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: table;
+    padding: 1.5rem;
+}
+
+.image_container {
+    display: table-cell;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+@media (max-width: 1040px) {
+    .left_column,
+    .center_column,
+    .right_column {
+        display: block;
+    }
+
+    .center_column {
+        padding: 0;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+}
