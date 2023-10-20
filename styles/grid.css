@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    text-align: center;
+    /* ??? */
+    overflow: hidden;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 320px) {
+    body {
+        justify-content: start; /* Default value. */
+    }
+}
