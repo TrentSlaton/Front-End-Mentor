@@ -58,8 +58,10 @@ body {
 }
 
 .card_section {
+    width: 64rem;
     max-width: 100%;
     min-width: 300px;
+    height: 100%;
 }
 
 .card {
@@ -67,6 +69,7 @@ body {
     max-width: 20rem;
     height: 14rem;
     background-color: white;
+    padding: 1.5rem;
     border-top: 3px solid;
     border-radius: 10px;
     box-shadow: 0 1rem 1.5rem hsla(0, 0%, 0%, 0.1);

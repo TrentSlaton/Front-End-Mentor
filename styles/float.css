@@ -1,17 +1,16 @@
 .card_section {
-    display: table;
     margin: auto;
 }
 
 .left_column,
 .center_column,
 .right_column {
-    display: table-cell;
+    float: left;
 }
 
 .left_column,
 .right_column {
-    vertical-align: middle;
+    padding-top: 8rem;
 }
 
 .center_column {
@@ -22,21 +21,30 @@
     margin-bottom: 2rem;
 }
 
-.card {
-    display: table;
+.card1 {
+    vertical-align: middle;
 }
 
 .image_container {
-    display: table-cell;
-    text-align: right;
-    vertical-align: bottom;
+    float: right;
+    margin-top: 2rem;
 }
 
 @media (max-width: 1040px) {
+    .card_section {
+        min-width: 300px;
+        max-width: 100%;
+    }
+
     .left_column,
     .center_column,
     .right_column {
-        display: block;
+        clear: both;
+    }
+
+    .left_column,
+    .right_column {
+        padding-top: 0;
     }
 
     .center_column {
