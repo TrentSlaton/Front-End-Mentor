@@ -12,6 +12,17 @@
     gap: 1rem;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
 @media (max-width: 1040px) {
     .card_section {
         flex-direction: column;

@@ -1,0 +1,9 @@
+.card_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+}
+
+.card2 {
+    margin-bottom: 1rem;
+}
