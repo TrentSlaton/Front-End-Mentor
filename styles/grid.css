@@ -1,9 +1,29 @@
 .card_section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+    height: auto;
     margin: auto;
+}
+
+.card {
+    display: grid;
+}
+
+.image_container {
+    display: grid;
+    justify-content: right;
+    align-self: end;
 }
 
 .card2 {
     margin-bottom: 1rem;
+}
+
+@media (max-width: 1040px) {
+    .card_section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 20rem;
+    }
 }
