@@ -1,0 +1,39 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.shoutout,
+.stars {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.stars {
+    width: 100%;
+}
+
+.starcard2 {
+    margin: 1rem auto;
+}
+
+.starcard3 {
+    margin-left: auto;
+}
+
+.review {
+    margin-top: 4rem;
+}
+
+.review_card {
+    /* It doesn't seem possible to get the layout right for the .review_card(s) without modifying the HTML, which I am not willing to do in this case. */
+    display: table-cell;
+}
+
+@media (max-width: 1024px) {
+}
