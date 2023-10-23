@@ -1,0 +1,49 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.grid {
+    display: table;
+    margin: auto;
+}
+
+.top,
+.bottom {
+    display: table;
+}
+
+.card1,
+.card2,
+.card4,
+.card5 {
+    display: table-cell;
+}
+
+.card1,
+.card5 {
+    width: 66.66%;
+}
+
+.card2,
+.card4 {
+    width: 33.33%;
+}
+
+@media (max-width: 850px) {
+    .grid {
+        width: 85vw;
+        margin: auto;
+    }
+
+    .card {
+        display: block;
+        width: 100%;
+        margin: min(1vh, 1rem) auto;
+    }
+}
