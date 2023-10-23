@@ -45,7 +45,7 @@ main {
 
     .grid {
         width: 85vw;
-        margin-top: min(1vh, 1rem) auto;
+        margin: min(1vh, 1rem) auto;
     }
 
     .sub,
