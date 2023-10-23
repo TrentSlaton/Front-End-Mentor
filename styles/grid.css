@@ -1,0 +1,35 @@
+main {
+    margin: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.blurb {
+    max-width: 30rem;
+}
+
+@media (max-width: 800px) {
+    .mockups,
+    .content {
+        display: block;
+        margin: auto;
+    }
+
+    .mockups {
+        width: 85vw;
+        min-width: 300px;
+    }
+
+    .blurb {
+        min-width: 300px;
+        margin: auto;
+    }
+
+    .blurb > h1 {
+        font-size: 2rem;
+    }
+}
