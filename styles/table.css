@@ -1,0 +1,63 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.grid {
+    display: table;
+    margin: auto;
+}
+
+.bottom {
+    display: table;
+    width: 100%;
+}
+
+.sub,
+.why {
+    display: table-cell;
+    width: 50%;
+}
+
+.price {
+    display: table;
+}
+
+.price > span {
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 0.5rem;
+}
+
+@media (max-width: 720px) {
+    main,
+    .grid,
+    .bottom,
+    .sub,
+    .why {
+        display: block;
+    }
+
+    .grid {
+        width: 85vw;
+        margin-top: min(1vh, 1rem) auto;
+    }
+
+    .sub,
+    .why {
+        width: 100%;
+    }
+
+    .sub {
+        border-bottom-left-radius: 0;
+    }
+
+    .why {
+        border-bottom-left-radius: 10px;
+    }
+}
