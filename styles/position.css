@@ -1,0 +1,48 @@
+main {
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.mockups {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blurb {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    width: 400px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 825px) {
+    .mockups,
+    .content {
+        position: static;
+        display: block;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    .mockups {
+        width: 85vw;
+    }
+
+    .blurb {
+        position: static;
+        width: 85vw;
+        min-width: 300px;
+        margin: auto;
+        /* margin-left: 0; */
+    }
+
+    .blurb > h1 {
+        font-size: 2rem;
+    }
+}
