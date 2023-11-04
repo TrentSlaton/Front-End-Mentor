@@ -36,7 +36,7 @@ body {
 }
 
 .grid {
-    width: 50rem;
+    max-width: 1300px;
 }
 
 .card {
