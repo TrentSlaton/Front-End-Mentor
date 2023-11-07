@@ -9,3 +9,4 @@
 -   implement way to dynamically swap layout methods
 -   BEM naming convention
 -   clean up file/directory structure
+-   accessibility (keyboard navigation, aria, screenreader-friendly, ...)
