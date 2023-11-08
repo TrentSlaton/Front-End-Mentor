@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+    /* Primary Colors*/
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+
+    /* Neutral Colors*/
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+
+    /* Font Weights */
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1440px;
+    text-align: center;
+    padding: 1.25rem;
+    padding-bottom: 0;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#nav-bar > img {
+    display: block;
+    width: 50%;
+    min-width: 100px;
+    max-width: 240px;
+}
+
+#nav-bar > button {
+    background-color: white;
+    color: var(--pink);
+    padding: 0.5em 2em;
+    border: 1px solid var(--pink);
+    border-radius: 1000px;
+    box-shadow: 0 0 10px hsla(322, 100%, 66%, 0.2);
+    cursor: pointer;
+}
+
+#nav-bar > button:hover {
+    color: var(--light-pink);
+    border: 1px solid var(--light-pink);
+    box-shadow: 0 0 10px hsla(321, 100%, 78%, 0.2);
+}
+
+h1 {
+    font-family: "Poppins";
+    margin-bottom: 1rem;
+}
+
+p#sales-pitch {
+    max-width: 52ch;
+    line-height: 1.4em;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+button.get-started-button {
+    /* width: 80%; */
+    background-color: var(--pink);
+    color: white;
+    font-size: 1.125rem;
+    font-weight: var(--semi-bold);
+    padding: 0.75em min(3em, 10vw);
+    border: none;
+    border-radius: 999px;
+    margin-bottom: 4rem;
+    box-shadow: 0 5px 10px hsla(322, 100%, 66%, 0.35);
+    cursor: pointer;
+}
+
+button.get-started-button:hover {
+    background-color: var(--light-pink);
+    box-shadow: 0 0 10px hsla(321, 100%, 78%, 0.2);
+}
+
+img#mockups {
+    display: block;
+    width: 80%;
+    min-width: 260px;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30rem;
+}
+
+#stats img {
+    display: block;
+    width: auto;
+    height: 10vw;
+    min-height: 30px;
+    max-height: 40px;
+    margin-right: auto;
+}
+
+p.stats-header {
+    font-size: 3rem;
+    font-weight: var(--bold);
+}
+
+p.stats-blurb {
+    color: gray;
+}
+
+#section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-bottom: 10rem;
+}
+
+section#grow-together,
+section#flowing-conversations,
+section#your-users,
+section#build-your-community {
+    /* height: 755px; */
+}
+
+section#grow-together > img {
+    display: block;
+    width: 100%;
+}
+
+#grow-together__outer-container {
+    background-color: var(--very-pale-blue);
+}
+
+#grow-together__outer-container__inner-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.column {
+    width: 50%;
+}
+
+.column > h2 {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.column > p {
+    max-width: 55ch;
+    line-height: 1.5em;
+}
+
+.column-left {
+    text-align: left;
+}
+
+.column-right {
+    text-align: right;
+}
+
+.column-right > p {
+    margin-left: auto;
+}
+
+#grow-together__outer-container__inner-container > img {
+    width: 50%;
+}
+
+#flowing-conversations__inner-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+#flowing-conversations__inner-container > img {
+    width: 50%;
+}
+
+section#your-users > img {
+    display: block;
+    width: 100%;
+}
+
+#your-users__outer-container {
+    background-color: var(--very-pale-blue);
+}
+
+#your-users__outer-container__inner-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+#your-users__outer-container__inner-container > img {
+    width: 50%;
+}
+
+section#build-your-community > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    color: white;
+}
+
+footer > img {
+    /* display: block; */
+    width: 100%;
+}
+
+#footer-container {
+    width: 100%;
+    background-color: var(--very-dark-cyan);
+}
+
+#footer__left-column,
+#footer__right-column {
+    flex: 1;
+}
+
+#footer-container {
+    display: flex;
+    gap: 30%;
+    padding: 3rem;
+}
+
+#footer__left-column {
+    text-align: left;
+}
+
+#footer__left-column > p {
+    max-width: 40ch;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.contact > img {
+    margin-right: 1rem;
+}
+
+#socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#footer__right-column {
+    text-align: left;
+}
+
+#footer__left-column > img {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+#footer__right-column > h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#footer__right-column > p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#signup > input {
+    font-size: large;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+#signup > button {
+    background-color: var(--pink);
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#signup > button:hover {
+    background-color: var(--light-pink);
+}
+
+@supports (min-height: 100svh) {
+    body {
+        min-height: 100svh;
+    }
+}
+
+@supports (margin-bottom: min(1rem, 1vh)) {
+    #nav-bar,
+    button.get-started-button,
+    img#mockups,
+    #stats {
+        margin-bottom: min(14rem, 7vh);
+    }
+}
+
+@supports (height: clamp(1rem, 1rem, 1rem)) {
+    p.stats-header {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .grow-together__container > img {
+        width: clamp(200px, 80%, 300px);
+    }
+}
