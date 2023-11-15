@@ -1,0 +1,14 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card {
+    text-align: center;
+    margin: auto;
+}

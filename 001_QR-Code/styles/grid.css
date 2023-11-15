@@ -1,0 +1,15 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    text-align: center;
+}
+
+@media (max-width: 300px) {
+    body {
+        justify-content: start; /* Default value. */
+    }
+}

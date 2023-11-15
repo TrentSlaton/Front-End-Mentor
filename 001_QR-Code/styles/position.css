@@ -1,0 +1,29 @@
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-height: 534px) {
+    .card {
+        top: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 300px) {
+    .card {
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 300px) and (max-height: 534px) {
+    .card {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}

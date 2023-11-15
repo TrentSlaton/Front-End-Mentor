@@ -1,0 +1,3 @@
+/* It doesn't seem that float can be used to center things vertically or horizontally, but rather is used to push things left or right... maybe there's a hack around that but for now I'll leave it be. */
+
+/* Perhaps float.css should't be its own category? Consider combining float with position. */
