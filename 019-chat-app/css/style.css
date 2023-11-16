@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+    /* Text Colors */
+    --pale-violet: hsl(276, 100%, 81%);
+    --moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%); /* Also a Secondary Color */
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+
+    /* Gradient Colors */
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /* Secondary Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    min-height: 100vh;
+    background-color: rgb(248, 248, 248);
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#left-pill,
+#right-pill {
+    position: absolute;
+    width: 30vw;
+    min-width: 150px;
+    height: 85%;
+    min-height: 400px;
+    z-index: -1;
+}
+
+#left-pill {
+    top: 0;
+    left: -100px;
+    background-color: var(--light-violet);
+    border-radius: 0 0 999px 999px;
+}
+
+#right-pill {
+    bottom: 0;
+    right: -100px;
+    background-color: var(--light-grayish-violet);
+    border-radius: 999px 999px 0 0;
+}
+
+#phone {
+    position: relative;
+    width: 320px;
+    /* height: 600px; */
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 50px rgba(200, 200, 200, 0.5);
+}
+
+.phone__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    border-radius: 25px;
+}
+
+#top-notch {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    height: 20px;
+    background-color: var(--white);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: auto;
+}
+
+#contact {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, var(--light-violet), var(--light-magenta));
+    padding: 18px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 9px 5px -5px rgba(200, 200, 200, 0.5);
+}
+
+.contact__container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+#left-chevron:before {
+    display: inline-block;
+    /* transform: rotate(-135deg); */
+    transform: rotate(-135deg) skew(15deg, 15deg);
+    vertical-align: middle;
+    width: 0.5em;
+    height: 0.5em;
+    color: white;
+    content: "";
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+}
+
+.contact__container > img {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.contact__container__name-container > h2 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    /* margin-bottom: 0.1rem; */
+}
+
+.contact__container__name-container > p {
+    color: var(--pale-violet);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3px;
+    margin-left: auto;
+}
+
+#hamburger > div {
+    width: 4px;
+    height: 4px;
+    background-color: var(--pale-violet);
+    border-radius: 1px;
+}
+
+#chat-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+}
+
+.chat-bubble {
+    font-size: 0.7rem;
+    padding: 1em;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.chat-bubble > p {
+    max-width: 22ch;
+}
+
+.chat-recieved {
+    background-color: var(--light-grayish-violet);
+    color: var(--moderate-violet);
+    border-bottom-left-radius: 5px;
+}
+
+#dog-image-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#dog-image-section > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.chat-sent {
+    background-color: var(--white);
+    color: var(--very-dark-desaturated-violet);
+    border-bottom-right-radius: 5px;
+    margin-left: auto;
+    margin-right: unset;
+    box-shadow: 0 5px 10px -10px rgba(200, 200, 200, 0.5);
+}
+
+.chat-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+
+    background-image: linear-gradient(to right, var(--light-magenta), var(--light-violet));
+}
+
+.select {
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 50%;
+}
+
+.chat-price :first-of-type {
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+.price {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+#message-input {
+    position: relative;
+}
+
+#message-input > input {
+    width: 100%;
+    border: none;
+    font-size: small;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 999px;
+}
+
+#message-input > button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: var(--very-dark-desaturated-violet);
+    border: none;
+    border-radius: 50%;
+}
+
+#right-chevron:before {
+    display: inline-block;
+    /* transform: rotate(-135deg); */
+    transform: rotate(45deg) skew(15deg, 15deg);
+    vertical-align: middle;
+    width: 0.5em;
+    height: 0.5em;
+    color: white;
+    content: "";
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+}
+
+#blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#blurb > h1 {
+    color: var(--very-dark-desaturated-violet);
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#blurb > p {
+    max-width: 45ch;
+    color: var(--grayish-blue);
+    line-height: 1.5em;
+}
+
+@supports (min-height: 100svh) {
+    body {
+        min-height: 100svh;
+    }
+}
+/*
+  Samuel Green Available to Walk That sounds great. I’d be happy with that. Could you send over some pictures of your dog, please? Here are a few pictures. She’s a happy girl! Can you make it? She looks so happy! The time we discussed works. How long shall I take her out for? 30 minute walk $29 1 hour walk $49 Type a message…
+*/
