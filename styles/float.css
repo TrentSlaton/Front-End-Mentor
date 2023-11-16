@@ -1,0 +1,52 @@
+.product_card {
+    margin: auto;
+    overflow: hidden;
+}
+
+.image_section,
+.summary_section {
+    width: 50%;
+}
+
+.image_section {
+    float: left;
+}
+
+.summary_section {
+    float: right;
+}
+
+.main_image {
+    width: 100%;
+}
+
+.price_section {
+    overflow: hidden;
+}
+
+.discount_price {
+    float: left;
+    margin-right: 1rem;
+}
+
+.original_price {
+    margin-top: 0.5rem;
+    margin-right: 3rem;
+}
+
+@media (max-width: 620px) {
+    .product_card {
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+    .image_section,
+    .summary_section {
+        width: 100%;
+    }
+
+    .main_image {
+        max-height: 50vh;
+        object-fit: cover;
+        object-position: 100% 30%;
+    }
+}

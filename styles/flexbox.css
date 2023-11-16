@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_card {
+    display: flex;
+}
+
+.image_section,
+.summary_section {
+    flex-basis: 50%;
+}
+
+.main_image {
+    width: 100%;
+    max-height: 100%;
+}
+
+.price_section {
+    display: flex;
+    gap: 1rem;
+}
+
+.original_price {
+    align-self: center;
+}
+
+@media (max-width: 620px) {
+    body {
+        /* This is required for "infinite responsiveness", meaning that none of the content gets cut off and becomes inaccessible once the viewport becomes certain dimensions. The limitation of this is that when the media query is met, the flexbox is no longer centered. This also affects accessibility when font size is made larger.*/
+        justify-content: flex-start;
+    }
+
+    .product_card {
+        flex-direction: column;
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+
+    .main_image {
+        max-height: 50vh;
+        object-fit: cover;
+        object-position: 100% 30%;
+    }
+}

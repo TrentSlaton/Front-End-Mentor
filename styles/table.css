@@ -1,0 +1,60 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.product_card {
+    display: table;
+    margin: 0 auto;
+}
+
+.image_section,
+.summary_section {
+    display: table-cell;
+    width: 50%;
+}
+
+.image_section {
+    vertical-align: middle;
+}
+
+.main_image {
+    width: 100%;
+}
+
+.price_section {
+    display: table;
+}
+
+.discount_price {
+    display: table-cell;
+}
+
+.original_price {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+
+@media (max-width: 620px) {
+    .product_card {
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+    .image_section,
+    .summary_section {
+        display: block;
+        width: 100%;
+    }
+
+    .main_image {
+        max-height: 50vh;
+        object-fit: cover;
+        object-position: 100% 30%;
+    }
+}

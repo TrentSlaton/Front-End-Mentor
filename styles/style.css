@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap");
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100svh;
+    background-color: var(--cream);
+}
+
+.product_card {
+    width: 38rem;
+    min-width: 300px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.main_image {
+    display: block;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.summary_section {
+    padding: 2rem;
+}
+
+header,
+h1,
+.summary_section > p,
+.price_section {
+    /* Was margin-bottom: 1.75rem; It did give expected results, but when looking at this section in float.css, .summary_section was a few pixels short. So it would seem that display: table-cell and float cause the content to be filled out differently. Also, I had to specifically select the <p> tag in float.css since it was applying margin-bottom to every <p> tag, not just the direct child of .summary_section like it was doing in table.css... I think it has to do with the fact that .price_section is a display: table-cell... */
+    margin-bottom: 1.8rem;
+}
+
+.summary_section header {
+    color: var(--dark-grayish-blue);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+.summary_section h1 {
+    color: var(--very-dark-blue);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.summary_section > p {
+    color: var(--dark-grayish-blue);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.discount_price {
+    color: var(--dark-cyan);
+    font-family: "Fraunces";
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.original_price {
+    color: var(--dark-grayish-blue);
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    width: 100%;
+    height: 3rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 25%);
+    cursor: pointer;
+}
+
+@media (max-width: 620px) {
+    .main_image {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+}
