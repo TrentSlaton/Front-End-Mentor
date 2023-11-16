@@ -1,0 +1,25 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card {
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+
+.stats {
+    display: table;
+    width: 100%;
+}
+
+.stats > div {
+    display: table-cell;
+    width: 33.33%;
+}

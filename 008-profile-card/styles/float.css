@@ -1,0 +1,16 @@
+.card {
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.stats {
+    overflow: hidden;
+}
+
+.followers,
+.likes,
+.photos {
+    float: left;
+    width: 33.33%;
+}
