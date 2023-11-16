@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-alpha: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100svh;
+    background-color: var(--very-light-gray);
+}
+
+.vehicle_card {
+    max-width: 50rem;
+    min-width: 300px;
+}
+
+.vehicle {
+    padding: 2.5rem;
+}
+
+.vehicle > img {
+    width: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.vehicle > h2 {
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.vehicle > p {
+    color: var(--transparent-white-alpha);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 4rem;
+}
+
+.vehicle > button {
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--very-light-gray);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 2rem;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sedans > button {
+    color: var(--bright-orange);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs > button {
+    color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury > button {
+    color: var(--very-dark-cyan);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--transparent-white-alpha);
+    border: solid var(--transparent-white-alpha) 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .vehicle_card {
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+
+    .sedans {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: unset;
+    }
+
+    .luxury {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 10px;
+    }
+}

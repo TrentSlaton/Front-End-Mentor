@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle_card {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    body {
+        justify-content: flex-start;
+    }
+    .vehicle_card {
+        flex-direction: column;
+    }
+}
