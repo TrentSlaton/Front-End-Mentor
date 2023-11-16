@@ -1,0 +1,69 @@
+.results_and_summary_card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41rem;
+    height: 24rem;
+}
+
+.results,
+.summary {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 20.5rem;
+    height: 24rem;
+}
+
+.results {
+    left: 0;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.results_header {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle {
+    padding-top: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.summary {
+    right: 0;
+}
+
+ul {
+    margin-bottom: 1.5rem;
+}
+
+li {
+    padding: 7px 7px;
+    margin-bottom: 10px;
+}
+
+.left_section {
+    display: inline;
+}
+
+img {
+    margin-right: 5px;
+}
+
+.right_section {
+    position: absolute;
+    /* top: 7px; */
+    right: 7px;
+    transform: translateX(-50%);
+    display: inline;
+}
+
+pre {
+    display: inline;
+}

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+    /* Primary Colors */
+    --light-red: hsla(0, 100%, 67%, 1);
+    --orangey-yellow: hsla(39, 100%, 56%, 1);
+    --green-teal: hsla(166, 100%, 37%, 1);
+    --cobalt-blue: hsla(234, 85%, 45%, 1);
+
+    /* Alpha-adjusted Primary Colors */
+    --light-red-alpha: hsla(0, 100%, 95%, 1);
+    --orangey-yellow-alpha: hsla(39, 100%, 95%, 1);
+    --green-teal-alpha: hsla(166, 100%, 95%, 1);
+    --cobalt-blue-alpha: hsla(234, 85%, 95%, 1);
+
+    /* Background Gradients*/
+    --light-slate-blue: hsla(252, 100%, 67%, 1);
+    --light-royal-blue: hsla(241, 81%, 54%, 1);
+
+    /* Circle Gradients*/
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0.05);
+
+    /* Neutral Colors */
+    --white: hsla(0, 0%, 100%, 1);
+    --pale-blue: hsla(221, 100%, 96%, 1);
+    --light-lavender: hsla(241, 100%, 89%, 1);
+    --dark-gray-blue: hsla(224, 30%, 27%, 1);
+
+    /* Font Weights */
+    --medium: 500;
+    --bold: 700;
+    --extra-bold: 800;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100svh;
+    background-color: var(--white);
+
+    /* Extended by: table.css,  */
+}
+
+p {
+    font-weight: var(--medium);
+    max-width: 30ch;
+}
+
+.results_and_summary_card {
+    min-width: 18.75rem;
+    max-width: 56.25rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.1);
+
+    /* Extended by: table.css,  */
+}
+
+.results,
+.summary {
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+
+    /* Extended by: table.css,  */
+}
+
+.results {
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.results_header {
+    color: var(--light-lavender);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    border-radius: 50%;
+
+    /* Extended by: table.css,  */
+}
+
+.result {
+    color: var(--white);
+    font-weight: var(--extra-bold);
+    font-size: 3.5rem;
+
+    /* Extended by: table.css,  */
+}
+
+.circle .out_of {
+    color: var(--light-lavender);
+}
+
+.rating {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.percentile {
+    color: var(--light-lavender);
+}
+
+.summary_header {
+    color: var(--dark-gray-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary_breakdown {
+    list-style-type: none;
+    width: 100%;
+    font-weight: var(--bold);
+    border-radius: 7px;
+}
+
+.reaction {
+    background-color: var(--light-red-alpha);
+}
+
+.reaction .left_section {
+    color: var(--light-red);
+}
+
+img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.right_section span {
+    color: var(--dark-gray-blue);
+}
+
+.right_section pre {
+    color: var(--green-teal);
+}
+
+.memory {
+    background-color: var(--orangey-yellow-alpha);
+}
+
+.memory .left_section {
+    color: var(--orangey-yellow);
+}
+
+.verbal {
+    background-color: var(--green-teal-alpha);
+}
+
+.verbal .left_section {
+    color: var(--green-teal);
+}
+
+.visual {
+    background-color: var(--cobalt-blue-alpha);
+}
+
+.visual .left_section {
+    color: var(--cobalt-blue);
+}
+
+button {
+    width: 100%;
+    background-color: var(--dark-gray-blue);
+    color: var(--pale-blue);
+    font-size: 0.9rem;
+    font-weight: var(--medium);
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--cobalt-blue);
+}
+
+@media (max-width: 600px) {
+    .results {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
