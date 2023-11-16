@@ -1,0 +1,40 @@
+.grid {
+    margin: auto;
+    overflow: hidden;
+}
+
+.top {
+    overflow: hidden;
+}
+
+.card1 {
+    float: left;
+    height: 25rem;
+    width: 60%;
+}
+
+.card2 {
+    float: right;
+    height: 25rem;
+    width: 30%;
+}
+
+.card3 {
+    /* float: right; */
+}
+
+.bottom {
+    overflow: hidden;
+}
+
+.card4 {
+    float: left;
+    height: 25rem;
+    width: 30%;
+}
+
+.card5 {
+    float: right;
+    height: 25rem;
+    width: 60%;
+}
