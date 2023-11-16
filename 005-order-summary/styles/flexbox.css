@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order_summary {
+    text-align: center;
+}
+
+.plan_summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan_summary > a {
+    margin-left: auto;
+}
+
+@media (max-width: 300px) {
+    body {
+        justify-content: flex-start;
+    }
+}

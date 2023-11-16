@@ -1,0 +1,31 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#order_summary {
+    margin: auto;
+    text-align: center;
+}
+
+.plan_summary {
+    display: table;
+    width: 100%;
+}
+
+.stack {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.plan_summary > a {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
