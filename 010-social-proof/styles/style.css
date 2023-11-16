@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-Pink: hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100svh;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 64rem;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.shoutout > h2 {
+    width: 15ch;
+    color: var(--very-dark-magenta);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.shoutout > p {
+    width: 40ch;
+    color: var(--dark-grayish-magenta);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+}
+
+.stars {
+    /* padding-top: 1rem; */
+}
+
+.starcard {
+    width: 25rem;
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem;
+    border-radius: 10px;
+    /* margin-left: auto; */
+}
+
+.star_image > img {
+    margin: 0.2rem;
+}
+
+.starcard > span {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+.starcard1 {
+    /* margin-right: 5rem; */
+}
+
+.starcard2 {
+    /* margin-top: 1rem; */
+    /* margin-right: 2.5rem; */
+    /* margin-bottom: 1rem; */
+}
+
+.review {
+    /* padding-top: 3rem; */
+}
+
+.review_card {
+    height: 16rem;
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.review_card > blockquote {
+    color: var(--white);
+    font-size: medium;
+    line-height: 25px;
+}
+
+.review_card > blockquote::before {
+    content: '"';
+    color: white;
+    font-size: x-large;
+}
+
+.review_card > blockquote::after {
+    content: '"';
+    color: white;
+    font-size: x-large;
+}
+
+.buyer {
+    /* margin-bottom: 1.5rem; */
+}
+
+.buyer > img {
+    display: block;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.buyer > h3 {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+    /* margin-left: -4rem; */
+}
+
+.buyer > h4 {
+    color: var(--soft-Pink);
+    font-size: 1.25rem;
+    font-weight: 400;
+    /* margin-left: -4rem; */
+    /* margin-top: 1.5rem; */
+}
+
+.review_card1 {
+    /* margin-right: 0.5rem; */
+}
+
+.review_card2 {
+    /* margin-left: 0.5rem; */
+    /* margin-top: 1rem; */
+    /* margin-right: 0.5rem; */
+}
+
+.review_card3 {
+    /* margin-left: 0.5rem; */
+    /* margin-top: 2rem; */
+}
