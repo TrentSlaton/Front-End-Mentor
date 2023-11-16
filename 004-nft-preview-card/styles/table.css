@@ -1,0 +1,44 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card {
+    margin: auto;
+}
+
+.price_time {
+    display: table;
+    width: 100%;
+}
+
+.price > img,
+.time > img {
+    vertical-align: middle;
+}
+
+.price {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.time {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.creator_blurb {
+    display: table;
+}
+
+.creator_blurb > img,
+.creator_blurb > p {
+    display: table-cell;
+    vertical-align: middle;
+}

@@ -1,0 +1,22 @@
+.card {
+    margin: auto;
+}
+
+.price > img,
+.price > span,
+.time > img,
+.time > span {
+    vertical-align: middle;
+}
+
+.time {
+    float: right;
+}
+
+.creator_blurb > img {
+    vertical-align: middle;
+}
+
+.creator_blurb > p {
+    display: inline;
+}

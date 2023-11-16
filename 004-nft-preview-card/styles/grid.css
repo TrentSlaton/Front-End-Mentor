@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+.price_time {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.price > img,
+.price > span,
+.time > img,
+.time > span {
+    vertical-align: middle;
+}
+
+.time {
+    justify-self: right;
+}
+
+.creator_blurb {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
