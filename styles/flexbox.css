@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats_card {
+    display: flex;
+}
+
+.stats_section,
+.image_section {
+    flex: 1;
+}
+
+.stats_blurb {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image_section {
+    height: auto;
+}
+
+.image_section > img {
+    position: static;
+}
+
+@media (max-width: 700px) {
+    body {
+        justify-content: flex-start;
+    }
+
+    .stats_card {
+        flex-direction: column;
+        width: 85vw;
+        margin: min(1rem, 1vh) auto;
+    }
+
+    .stats_section {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .image_section {
+        order: -1;
+        height: 50vh;
+        max-height: 200px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+
+    .image_section > img {
+        object-position: 100% 10%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+    }
+
+    .overlay {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+}

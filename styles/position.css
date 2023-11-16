@@ -1,0 +1,28 @@
+/* More issues with the use of position on overlay... not gonna mess with it right now. */
+
+.stats_card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+}
+
+.stats_section,
+.image_section {
+    position: absolute;
+    width: 50%;
+}
+
+.stats_section {
+    left: 0;
+}
+
+.image_section {
+    right: 0;
+}
+
+.image_section > img {
+    width: 100%;
+    height: 100%;
+}
