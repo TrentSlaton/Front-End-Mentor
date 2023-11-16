@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+    --gradient-start: hsl(6, 100%, 80%);
+    --gradient-end: hsl(335, 100%, 65%);
+
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100svh;
+    background-color: var(--very-dark-blue);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+.logo_with_icons_card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    gap: 2rem;
+}
+
+.logo_with_icons_card > img {
+    width: 135px;
+}
+
+.icons {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+    gap: 1em;
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+    background-color: var(--very-dark-blue);
+    padding: 0.75em;
+    border-radius: 10px;
+}
+
+.space_available_section {
+    align-self: flex-end;
+    width: 35rem;
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.storage_callout {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.youve_used {
+    color: var(--pale-blue);
+    font-weight: 400;
+}
+
+.youve_used > span {
+    color: var(--pale-blue);
+    font-weight: 700;
+}
+
+.remainder_callout {
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: white;
+    color: var(--very-dark-blue);
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 0.5em;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+
+.gb_left > span {
+    vertical-align: middle;
+    color: var(--grayish-blue);
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    background-color: var(--very-dark-blue);
+    padding: 0.2em;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    /* I do not have FF installed, didn't bother with it for this challenge... */
+}
+
+.min_max {
+    display: flex;
+    justify-content: space-between;
+    color: var(--pale-blue);
+}
+
+.triangle {
+    position: absolute;
+    right: 0;
+    bottom: -0.7em;
+    width: 0;
+    height: 0;
+    border-top: 15px solid white;
+    border-right: 10px solid white;
+    border-left: 15px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+@media (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: reset;
+        background-size: cover;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .space_available_section {
+        width: 320px;
+    }
+
+    .remainder_callout {
+        position: absolute;
+        right: 55px;
+        bottom: -8rem;
+        border-radius: 10px;
+    }
+
+    .triangle {
+        border: none;
+    }
+}
