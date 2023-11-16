@@ -1,0 +1,29 @@
+main {
+    margin: auto;
+}
+
+.mockups {
+    float: left;
+    margin-right: 2rem;
+}
+
+.blurb {
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 750px) {
+    .mockups,
+    .content {
+        display: block;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    .mockups {
+        width: 85vw;
+    }
+
+    .blurb > h1 {
+        font-size: 2rem;
+    }
+}
