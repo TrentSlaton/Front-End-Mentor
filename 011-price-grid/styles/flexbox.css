@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+}
+
+.sub,
+.why {
+    flex: 1;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 720px) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .sub {
+        border-bottom-left-radius: 0;
+    }
+
+    .why {
+        border-bottom-left-radius: 10px;
+    }
+}

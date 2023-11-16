@@ -1,0 +1,52 @@
+.grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45rem;
+}
+
+.bottom {
+    position: relative;
+}
+
+.sub,
+.why {
+    width: 50%;
+}
+
+.why {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 720px) {
+    main,
+    .grid,
+    .bottom,
+    .sub,
+    .why {
+        position: static;
+        display: block;
+    }
+
+    .grid {
+        transform: none;
+        width: 85vw;
+        margin: min(1vh, 1rem) auto;
+    }
+
+    .sub,
+    .why {
+        width: 100%;
+    }
+
+    .sub {
+        border-bottom-left-radius: 0;
+    }
+
+    .why {
+        border-bottom-left-radius: 10px;
+    }
+}

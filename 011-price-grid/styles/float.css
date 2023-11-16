@@ -1,0 +1,46 @@
+.grid {
+    margin: auto;
+}
+
+.bottom {
+    overflow: hidden;
+}
+
+.sub,
+.why {
+    float: left;
+    width: 50%;
+}
+
+.price > span {
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 720px) {
+    main,
+    .grid,
+    .bottom,
+    .sub,
+    .why {
+        clear: both;
+        display: block;
+    }
+
+    .grid {
+        width: 85vw;
+        margin: min(1vh, 1rem) auto;
+    }
+
+    .sub,
+    .why {
+        width: 100%;
+    }
+
+    .sub {
+        border-bottom-left-radius: 0;
+    }
+
+    .why {
+        border-bottom-left-radius: 10px;
+    }
+}

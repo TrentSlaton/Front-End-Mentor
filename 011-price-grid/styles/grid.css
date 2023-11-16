@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    place-content: center;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.price {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 720px) {
+    body {
+        justify-content: start;
+    }
+
+    .grid {
+        justify-content: start;
+        width: 85vw;
+        margin: min(1vh, 1rem) auto;
+    }
+
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .sub {
+        border-bottom-left-radius: 0;
+    }
+
+    .why {
+        border-bottom-left-radius: 10px;
+    }
+}
