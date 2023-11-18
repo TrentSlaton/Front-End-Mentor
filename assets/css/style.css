@@ -130,7 +130,7 @@ figure > img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 15px hsla(240, 2%, 57%, 0.25);
+    box-shadow: 0 0 2px hsla(240, 2%, 57%, 1);
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -181,7 +181,7 @@ footer > a:hover {
     border-radius: 10px;
     font-family: monospace;
     transition: background-color 0.5s, color 0.5s, transform 0.3s;
-    box-shadow: 0 0 5px hsla(240, 2%, 57%, 0.5);
+    box-shadow: 0 0 2px hsla(240, 2%, 57%, 1);
 }
 
 .tag:hover {
@@ -200,7 +200,7 @@ footer > a:hover {
 #fem-link {
     height: 40px;
     width: 40px;
-    box-shadow: 0 0 5px hsla(240, 2%, 57%, 1);
+    box-shadow: 0 0 2px hsla(240, 2%, 57%, 1);
     border-radius: 50%;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
