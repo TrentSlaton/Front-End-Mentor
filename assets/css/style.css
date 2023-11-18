@@ -110,7 +110,7 @@ article {
     margin-right: auto;
     margin-bottom: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 12px hsla(240, 2%, 57%, 0.25);
+    box-shadow: 0 0 2px hsla(240, 2%, 57%, 1);
 }
 
 .container {
