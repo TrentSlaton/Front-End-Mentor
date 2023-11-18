@@ -110,6 +110,7 @@ article {
     margin-right: auto;
     margin-bottom: 2rem;
     border-radius: 10px;
+    box-shadow: 0 0 12px hsla(240, 2%, 57%, 0.25);
 }
 
 .container {
@@ -129,6 +130,12 @@ figure > img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 0 15px hsla(240, 2%, 57%, 0.25);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+figure > img:hover {
+    transform: translate(2px, -2px);
 }
 
 .post-link {
@@ -139,6 +146,13 @@ figure > img {
 
 .post-link header {
     font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.post-link > p {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    font-weight: 200;
 }
 
 .date {
@@ -162,15 +176,17 @@ footer > a:hover {
 .tag {
     align-self: center;
     background-color: white;
+    font-size: 0.9rem;
     padding: 0.75em;
     border-radius: 10px;
     font-family: monospace;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: background-color 0.5s, color 0.5s, transform 0.3s;
+    box-shadow: 0 0 5px hsla(240, 2%, 57%, 0.5);
 }
 
 .tag:hover {
-    background-color: var(--blue);
-    color: white;
+    /* background-color: var(--blue); */
+    /* color: white; */
     transform: translate(2px, -2px);
 }
 
@@ -184,6 +200,14 @@ footer > a:hover {
 #fem-link {
     height: 40px;
     width: 40px;
+    box-shadow: 0 0 5px hsla(240, 2%, 57%, 1);
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#github-link:hover,
+#fem-link:hover {
+    transform: translate(2px, -2px);
 }
 
 #github-link > img,
