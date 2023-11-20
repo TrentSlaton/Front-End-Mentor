@@ -6,4 +6,6 @@
 
 **_All of my challenges are completed with plain vanilla HTML, CSS and JavaScript and are all written by hand. Only a text editor is used._**
 
+Here is a live demo of this repository: [link](https://trentslaton.github.io/Front-End-Mentor/)
+
 This is a combined repository for all of my http://frontendmentor.io challenges. It is a continual work in progress.
