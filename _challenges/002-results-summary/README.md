@@ -1,15 +1,9 @@
+![live demo screenshot of results summary](/assets/img/002-results-summary-big.gif)
+
+_A simple two-column layout displaying what appears to be the results of a mental acuity assessment. The results card is centered in the viewport and transitions to a vertical layout at smaller viewport sizes. Features a button that changes style on hover._
+
+This challenge implements several layout methods: table, float, position, flexbox and grid. The purpose was to familiarize myself with these techniques in order to gain a better understanding of which methods would be better or worse in a given scenario. Learning alternative and legacy layout methods is also useful when maintaining legacy webpages.
+
 # TODO
 
-clean up directory and file structure
-
-set up github project page
-
-describe goals and motivations (layout methods)
-
-screenshots
-
-blurb (capabilities/limitations of each layout as it relates to this project in particular)
-
-implement way to dynamically swap layouts
-
-implement a little question mark tooltip for the challenging points for each layout
+Implement dynamic layout switcher with blurbs explaining dynamics of each layout technique.
