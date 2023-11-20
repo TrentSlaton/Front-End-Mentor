@@ -1,6 +1,6 @@
 # Front-End-Mentor
 
-##Front End Mentor is a platform for improving your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
+## Front End Mentor is a platform for improving your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
 
 The user is given a challenge to solve. Each challenge comes with relevant image assets, a style guide, and a mockup of the intended design. The user is expected to recreate the design within the given constraints. The user may use any technologies they wish... React, Angular, Bootstrap, Tailwind...
 
