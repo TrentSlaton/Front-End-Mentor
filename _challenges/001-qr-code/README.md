@@ -1,6 +1,7 @@
 ![live demo screenshot of qr code](/assets/img/001-qr-code-big.gif)
 
 live demo: [link](https://trentslaton.github.io/Front-End-Mentor/_challenges/001-qr-code/index.html)
+
 challenge: [link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
 _The first and simplest of the Front End Mentor Challenges. It is a QR Code card that brings you to the Front End Mentor website. It is centered in the viewport and responds elegantly to virtually all viewport sizes._
