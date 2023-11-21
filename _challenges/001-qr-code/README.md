@@ -6,7 +6,7 @@ _The first and simplest of the Front End Mentor Challenges. It is a QR Code card
 
 This challenge implements several layout methods: table, float, position, flexbox and grid. The purpose was to familiarize myself with these techniques in order to gain a better understanding of which methods would be better or worse in a given scenario. Learning alternative and legacy layout methods is also useful when maintaining legacy webpages.
 
-tags: *html* *css* *responsive* *multi-layout* *table* *float* *position* *flexbox* *grid*
+tags: **html** **css** **responsive** **multi-layout** **table** **float** **position** **flexbox** **grid**
 
 # TODO
 
