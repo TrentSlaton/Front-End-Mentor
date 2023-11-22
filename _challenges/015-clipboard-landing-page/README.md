@@ -1,4 +1,4 @@
-![live demo screenshot of ](/assets/img/015-clipboard-landing-page-big.gif)
+![live demo screenshot of clipboard landing page](/assets/img/015-clipboard-landing-page-big.gif)
 
 live demo: [link](https://trentslaton.github.io/Front-End-Mentor/_challenges/015-clipboard-landing-page/index.html)
 
