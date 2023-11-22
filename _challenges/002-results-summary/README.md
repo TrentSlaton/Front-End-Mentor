@@ -1,6 +1,7 @@
 ![live demo screenshot of results summary](/assets/img/002-results-summary-big.gif)
 
 live demo: [link](https://trentslaton.github.io/Front-End-Mentor/_challenges/002-results-summary/index.html)
+
 challenge: [link](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
 
 _A simple two-column layout displaying what appears to be the results of a mental acuity assessment. The results card is centered in the viewport and transitions to a vertical layout at smaller viewport sizes. Features a button that changes style on hover._
