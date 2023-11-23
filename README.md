@@ -9,3 +9,5 @@
 Here is a live demo of this repository: [link](https://trentslaton.github.io/Front-End-Mentor/)
 
 This is a combined repository for all of my http://frontendmentor.io challenges. It is a continual work in progress.
+
+_tags_: **html**, **css**, **javascript**, **multi-layout**, **table**, **float**, **position**, **flexbox**, **grid**, **accessible**, **responsive**
