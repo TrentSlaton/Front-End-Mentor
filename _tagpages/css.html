@@ -35,14 +35,14 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const storedArticles = localStorage.getItem('cssArticles');
+        const cssArticles = localStorage.getItem("cssArticles");
 
-        if (storedArticles) {
-            const articleData = JSON.parse(storedArticles);
+        if (cssArticles) {
+            const articleData = JSON.parse(cssArticles);
             const showcase = document.querySelector("#showcase");
 
             articleData.forEach(articleHTML => {
-                const tempContainer = document.createElement('div');
+                const tempContainer = document.createElement("div");
                 tempContainer.innerHTML = articleHTML;
                 const articleElement = tempContainer.firstElementChild;
 
