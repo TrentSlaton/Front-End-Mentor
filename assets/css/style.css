@@ -46,7 +46,10 @@ body {
     margin-bottom: 45px;
     -webkit-backdrop-filter: saturate(180%) blur(35px);
     backdrop-filter: saturate(180%) blur(35px);
-    border-bottom: 1px solid hsla(240, 2%, 57%, 0.8);
+    /* border-bottom: 1px solid hsla(240, 2%, 57%, 0.8); */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 5px hsla(240, 2%, 57%, 0.8);
 }
 
 nav {
