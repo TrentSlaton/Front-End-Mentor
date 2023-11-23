@@ -4,21 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>CSS</title>
 </head>
 
 <body>
-    <h1>CSS</h1>
-    <p>Showcase items tagged with the <code>css</code> tag are projects that utilize CSS. Unless otherwise stated, all CSS is written by hand by me in vanilla CSS... i.e. no frameworks, libraries or build tools.</p>
+    <div id="nav-container">
+        <nav>
+            <a href="../">home</a>
+            <p>Trent Slaton</p>
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Search">
+                <button id="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 15 15" fill="white">
+                        <path d="M 14.298 13.202 l -3.87 -3.87 c 0.701 -0.929 1.122 -2.081 1.122 -3.332 c 0 -3.06 -2.489 -5.55 -5.55 -5.55 c -3.06 0 -5.55 2.49 -5.55 5.55 c 0 3.061 2.49 5.55 5.55 5.55 c 1.251 0 2.403 -0.421 3.332 -1.122 l 3.87 3.87 c 0.151 0.151 0.35 0.228 0.548 0.228 s 0.396 -0.076 0.548 -0.228 C 14.601 13.995 14.601 13.505 14.298 13.202 M 1.55 6 c 0 -2.454 1.997 -4.45 4.45 -4.45 c 2.454 0 4.45 1.997 4.45 4.45 S 8.454 10.45 6 10.45 C 3.546 10.45 1.55 8.454 1.55 6"></path>
+                    </svg>
 
-    <ul>
-        <li>list</li>
-        <li>of</li>
-        <li>all</li>
-        <li>CSS</li>
-        <li>showcases</li>
-    </ul>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <header id="page-header">
+        <h1>CSS</h1>
+        <p>Showcase items tagged with the <code>css</code> tag are projects that utilize CSS. Unless otherwise stated, all CSS is written by hand by me in vanilla CSS... i.e. no frameworks, libraries or build tools.</p>
+    </header>
+
+    <section id="showcase"></section>
 
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const storedArticles = localStorage.getItem('cssArticles');
+
+        if (storedArticles) {
+            const articleData = JSON.parse(storedArticles);
+            const showcase = document.querySelector("#showcase");
+
+            articleData.forEach(articleHTML => {
+                const tempContainer = document.createElement('div');
+                tempContainer.innerHTML = articleHTML;
+                const articleElement = tempContainer.firstElementChild;
+
+                showcase.appendChild(articleElement);
+            });
+        }
+    });
+</script>
 
 </html>

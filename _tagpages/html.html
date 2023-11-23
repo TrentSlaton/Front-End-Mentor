@@ -24,17 +24,33 @@
             </div>
         </nav>
     </div>
-    <h1>HTML</h1>
-    <p>Showcase items tagged with the <code>html</code> tag are projects that utilize HTML. Unless otherwise stated, all HTML is written by hand by me in vanilla HTML... i.e. no templating, frameworks, libraries or build tools.</p>
+    <header id="page-header">
+        <h1>HTML</h1>
+        <p>Showcase items tagged with the <code>html</code> tag are projects that utilize HTML. Unless otherwise stated, all HTML is written by hand by me in vanilla HTML... i.e. no templating, frameworks, libraries or build tools.</p>
+    </header>
 
-    <ul>
-        <li>list</li>
-        <li>of</li>
-        <li>all</li>
-        <li>HTML</li>
-        <li>showcases</li>
-    </ul>
+    <section id="showcase"></section>
 
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const htmlArticles = localStorage.getItem("htmlArticles");
+        console.log(htmlArticles);
+
+        if (htmlArticles) {
+            const articleData = JSON.parse(htmlArticles);
+            const showcase = document.querySelector("#showcase");
+
+            articleData.forEach(articleHTML => {
+                const tempContainer = document.createElement("div");
+                tempContainer.innerHTML = articleHTML;
+                const articleElement = tempContainer.firstElementChild;
+
+                showcase.appendChild(articleElement);
+            });
+        }
+    });
+</script>
 
 </html>
