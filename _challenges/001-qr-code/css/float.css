@@ -1,3 +1,5 @@
-/* It doesn't seem that float can be used to center things vertically or horizontally, but rather is used to push things left or right... maybe there's a hack around that but for now I'll leave it be. */
+/* There doesn't seem to be a way to center things vertically using just float... */
 
-/* Perhaps float.css should't be its own category? Consider combining float with position. */
+.card {
+    margin: auto;
+}
