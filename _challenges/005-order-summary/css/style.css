@@ -2,13 +2,13 @@
 
 :root {
     /* Primary */
-    --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
+    --pale-blue: hsl(225, 100%, 94%);
 
     /* Neutral */
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --very-pale-blue: hsl(225, 100%, 98%);
 }
 
 * {
@@ -19,12 +19,11 @@
 }
 
 body {
-    /* min-height: 100vh; */
-    min-height: 100svh;
+    min-height: 100vh;
     background-size: 1120px;
     background-position: top;
     background-color: var(--pale-blue);
-    background-image: url(../images/pattern-background-desktop.svg);
+    background-image: url(../img/pattern-background-desktop.svg);
     background-repeat: repeat-x;
 }
 
@@ -129,4 +128,10 @@ img {
 .cancel_button:hover {
     color: var(--dark-blue);
     cursor: pointer;
+}
+
+@supports (min-height: 100svh) {
+    body {
+        min-height: 100svh;
+    }
 }

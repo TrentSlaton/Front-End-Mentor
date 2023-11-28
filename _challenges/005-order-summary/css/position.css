@@ -50,8 +50,8 @@
 
 @media (max-width: 300px) and (max-height: 596px) {
     #order_summary {
-        top: 0;
         left: 0;
+        top: 0;
         transform: none;
     }
 }
