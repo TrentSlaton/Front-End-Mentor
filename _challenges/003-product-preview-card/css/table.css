@@ -46,6 +46,7 @@ main {
         width: 85vw;
         margin: min(1rem, 1vh) auto;
     }
+
     .image_section,
     .summary_section {
         display: block;
@@ -53,6 +54,7 @@ main {
     }
 
     .main_image {
+        min-height: 200px;
         max-height: 50vh;
         object-fit: cover;
         object-position: 100% 30%;
