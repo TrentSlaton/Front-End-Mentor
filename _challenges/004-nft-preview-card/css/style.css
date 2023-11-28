@@ -25,7 +25,7 @@
 }
 
 body {
-    min-height: 100svh;
+    min-height: 100vh;
     background-color: var(--very-dark-blue-main-background);
 }
 
@@ -101,4 +101,10 @@ hr {
 .creator_blurb > p > span {
     color: var(--white);
     font-weight: var(--font-weight-light);
+}
+
+@supports (min-height: 100svh) {
+    body {
+        min-height: 100svh;
+    }
 }
