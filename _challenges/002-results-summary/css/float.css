@@ -1,35 +1,31 @@
-.results_and_summary_card {
-    /* border: 1px red solid; */
+#results_and_summary_card {
     max-width: 650px;
     margin: auto;
 }
 
-.results_and_summary_card::after {
-    content: "";
-    clear: both;
+#results_and_summary_card::after {
     display: block;
+    clear: both;
+    content: "";
 }
 
-.results {
+#results {
     float: left;
     width: 50%;
     text-align: center;
 }
 
-.circle {
+#circle {
     padding-top: 2rem;
     margin: auto;
     margin-bottom: 1.5rem;
 }
 
-.result {
-}
-
-.percentile {
+#percentile {
     margin: auto;
 }
 
-.summary {
+#summary {
     float: right;
     width: 50%;
 }
@@ -60,8 +56,12 @@ pre {
 }
 
 @media (max-width: 600px) {
-    .results,
-    .summary {
+    #results_and_summary_card {
+        width: 300px;
+    }
+
+    #results,
+    #summary {
         float: none;
         margin: auto;
     }

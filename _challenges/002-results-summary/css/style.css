@@ -41,18 +41,18 @@
 }
 
 body {
-    min-height: 100svh;
+    min-height: 100vh;
     background-color: var(--white);
 
     /* Extended by: table.css,  */
 }
 
 p {
-    font-weight: var(--medium);
     max-width: 30ch;
+    font-weight: var(--medium);
 }
 
-.results_and_summary_card {
+#results_and_summary_card {
     min-width: 18.75rem;
     max-width: 56.25rem;
     background-color: var(--white);
@@ -62,8 +62,8 @@ p {
     /* Extended by: table.css,  */
 }
 
-.results,
-.summary {
+#results,
+#summary {
     min-width: 300px;
     padding: 30px;
     border-radius: 20px;
@@ -71,17 +71,17 @@ p {
     /* Extended by: table.css,  */
 }
 
-.results {
+#results {
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
 }
 
-.results_header {
+#results_header {
     color: var(--light-lavender);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.circle {
+#circle {
     width: 10rem;
     height: 10rem;
     background: linear-gradient(var(--violet-blue), var(--persian-blue));
@@ -90,37 +90,37 @@ p {
     /* Extended by: table.css,  */
 }
 
-.result {
+#result {
     color: var(--white);
-    font-weight: var(--extra-bold);
     font-size: 3.5rem;
+    font-weight: var(--extra-bold);
 
     /* Extended by: table.css,  */
 }
 
-.circle .out_of {
+#circle #out_of {
     color: var(--light-lavender);
 }
 
-.rating {
+#rating {
     color: var(--white);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.percentile {
+#percentile {
     color: var(--light-lavender);
 }
 
-.summary_header {
+#summary_header {
     color: var(--dark-gray-blue);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .summary_breakdown {
-    list-style-type: none;
     width: 100%;
+    list-style-type: none;
     font-weight: var(--bold);
     border-radius: 7px;
 }
@@ -187,8 +187,14 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-    .results {
+    #results {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+    }
+}
+
+@supports (min-height: 100svh) {
+    body {
+        min-height: 100svh;
     }
 }

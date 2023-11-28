@@ -1,14 +1,14 @@
-.results_and_summary_card {
+#results_and_summary_card {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 41rem;
     height: 24rem;
 }
 
-.results,
-.summary {
+#results,
+#summary {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -16,26 +16,26 @@
     height: 24rem;
 }
 
-.results {
+#results {
     left: 0;
     text-align: center;
     padding-top: 5rem;
 }
 
-.results_header {
+#results_header {
     position: absolute;
-    top: 30px;
     left: 50%;
+    top: 30px;
     transform: translateX(-50%);
 }
 
-.circle {
+#circle {
     padding-top: 2rem;
     margin: auto;
     text-align: center;
 }
 
-.summary {
+#summary {
     right: 0;
 }
 
@@ -58,7 +58,6 @@ img {
 
 .right_section {
     position: absolute;
-    /* top: 7px; */
     right: 7px;
     transform: translateX(-50%);
     display: inline;
@@ -66,4 +65,63 @@ img {
 
 pre {
     display: inline;
+}
+
+@media (max-height: 384px) {
+    #results_and_summary_card {
+        top: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 656px) {
+    #results_and_summary_card {
+        width: 300px;
+        height: 768px;
+    }
+
+    #results {
+        width: 300px;
+        left: 0;
+        right: 0;
+    }
+
+    #results {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    #summary {
+        width: 300px;
+        left: 0;
+        top: unset;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    #results_and_summary_card {
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 656px) and (max-height: 768px) {
+    #results_and_summary_card {
+        top: 0;
+        transform: translateX(-50%);
+    }
+    #results {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 768px) {
+    #results_and_summary_card {
+        left: unset;
+        top: unset;
+        transform: none;
+    }
 }

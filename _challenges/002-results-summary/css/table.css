@@ -9,29 +9,29 @@ main {
     vertical-align: middle;
 }
 
-.results_and_summary_card {
+#results_and_summary_card {
     display: inline-table;
 }
 
-.results,
-.summary {
+#results,
+#summary {
     display: table-cell;
     width: 50%;
     text-align: center;
 }
 
-.circle {
+#circle {
     display: table;
     margin: auto;
     margin-bottom: 1.5rem;
 }
 
-.result {
+#result {
     /* Couldn't figure out how to make the table-cell elements stack vertically how I wanted, so i used margin-top as a positioning hack. */
     margin-top: 2rem;
 }
 
-.summary_header {
+#summary_header {
     text-align: left;
 }
 
@@ -75,14 +75,14 @@ pre {
 
 @media (max-width: 600px) {
     /* Getting some weird responsiveness... works as expected at 600px breakpoint, but doesn't return at 601px, rather 616px... ?? */
-    .results_and_summary_card {
+    #results_and_summary_card {
         display: table;
         width: 300px;
         margin: auto;
     }
 
-    .results,
-    .summary {
+    #results,
+    #summary {
         display: block;
         width: 100%;
     }
