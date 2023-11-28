@@ -1,35 +1,35 @@
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.results_and_summary_card {
+#results_and_summary_card {
     display: flex;
 }
 
-.results {
+#results {
     display: flex;
     flex-direction: column;
 }
 
-.results_header {
+#results_header {
     align-self: center;
 }
 
-.circle {
+#circle {
     display: flex;
     align-self: center;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.rating {
+#rating {
     align-self: center;
 }
 
-.percentile {
+#percentile {
     text-align: center;
 }
 
@@ -56,13 +56,26 @@ pre {
     display: inline;
 }
 
-@media (max-width: 600px) {
-    body {
-        /* display: table is superior to this because it achieves the same effect but is able to be centered. You could fiddle your way to a close-enough solution with multiple media queries though... */
-        justify-content: flex-start;
+@media (max-width: 656px) {
+    #results_and_summary_card {
+        flex-direction: column;
     }
 
-    .results_and_summary_card {
-        flex-direction: column;
+    #results {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 656px) and (max-height: 768px) {
+    #results {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 }

@@ -57,10 +57,10 @@ img {
 }
 
 .right_section {
+    display: inline;
     position: absolute;
     right: 7px;
     transform: translateX(-50%);
-    display: inline;
 }
 
 pre {
@@ -81,9 +81,9 @@ pre {
     }
 
     #results {
-        width: 300px;
         left: 0;
         right: 0;
+        width: 300px;
     }
 
     #results {
@@ -112,6 +112,7 @@ pre {
         top: 0;
         transform: translateX(-50%);
     }
+
     #results {
         border-top-left-radius: 0;
         border-top-right-radius: 0;

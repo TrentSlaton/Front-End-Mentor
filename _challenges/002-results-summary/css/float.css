@@ -55,7 +55,7 @@ pre {
     display: inline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 656px) {
     #results_and_summary_card {
         width: 300px;
     }

@@ -73,7 +73,7 @@ pre {
     display: inline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 656px) {
     /* Getting some weird responsiveness... works as expected at 600px breakpoint, but doesn't return at 601px, rather 616px... ?? */
     #results_and_summary_card {
         display: table;
@@ -85,5 +85,17 @@ pre {
     #summary {
         display: block;
         width: 100%;
+    }
+
+    #results {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+@media (max-width: 656px) and (max-height: 768px) {
+    #results {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 }
