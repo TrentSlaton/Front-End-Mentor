@@ -1,10 +1,10 @@
 .vehicle_card {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    height: 28rem;
     width: 50rem;
+    height: 28rem;
 }
 
 .vehicle {
@@ -27,6 +27,13 @@
     right: 0;
 }
 
+@media (max-height: 471px) {
+    .vehicle_card {
+        top: 0;
+        transform: translateX(-50%);
+    }
+}
+
 @media (max-width: 800px) {
     .vehicle_card {
         position: unset;
@@ -34,7 +41,6 @@
         width: 85vw;
     }
     .vehicle {
-        /* display: block; */
         position: unset;
         transform: none;
         width: auto;

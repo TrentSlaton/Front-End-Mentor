@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
-    --bright-orange: hsl(31, 77%, 52%);
     --dark-cyan: hsl(184, 100%, 22%);
     --very-dark-cyan: hsl(179, 100%, 13%);
-    --transparent-white-alpha: hsla(0, 0%, 100%, 0.75);
+    --bright-orange: hsl(31, 77%, 52%);
     --very-light-gray: hsl(0, 0%, 95%);
+    --transparent-white-alpha: hsla(0, 0%, 100%, 0.75);
 }
 
 * {
@@ -16,13 +16,13 @@
 }
 
 body {
-    min-height: 100svh;
+    min-height: 100vh;
     background-color: var(--very-light-gray);
 }
 
 .vehicle_card {
-    max-width: 50rem;
     min-width: 300px;
+    max-width: 50rem;
 }
 
 .vehicle {
@@ -111,5 +111,11 @@ button:hover {
     .luxury {
         border-top-right-radius: unset;
         border-bottom-left-radius: 10px;
+    }
+}
+
+@supports (min-height: 100svh) {
+    body {
+        min-height: 100svh;
     }
 }
