@@ -13,8 +13,8 @@
 
 .image_container {
     display: grid;
-    justify-content: right;
     align-self: end;
+    justify-content: right;
 }
 
 .card2 {

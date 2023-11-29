@@ -1,5 +1,6 @@
 .card_section {
     margin: auto;
+    /* overflow: hidden; */
 }
 
 .left_column,
@@ -32,8 +33,7 @@
 
 @media (max-width: 1040px) {
     .card_section {
-        min-width: 300px;
-        max-width: 100%;
+        width: 320px;
     }
 
     .left_column,

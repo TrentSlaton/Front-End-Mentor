@@ -31,8 +31,8 @@
 
 .image_container {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     transform: translate(-50%, -50%);
 }
 
@@ -47,8 +47,8 @@
     .left_column,
     .center_column,
     .right_column {
-        position: static;
         display: block;
+        position: static;
     }
 
     .center_column {
@@ -56,7 +56,7 @@
     }
 
     .card {
-        margin-bottom: 2rem;
         transform: none;
+        margin-bottom: 2rem;
     }
 }
