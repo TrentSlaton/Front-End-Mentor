@@ -10,8 +10,8 @@ main {
 
 .card {
     display: table;
-    margin: auto;
     text-align: center;
+    margin: auto;
 }
 
 .stats {

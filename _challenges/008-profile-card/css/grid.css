@@ -5,7 +5,6 @@ body {
 
 .card {
     text-align: center;
-    /* ??? */
     overflow: hidden;
 }
 
@@ -16,6 +15,6 @@ body {
 
 @media (max-width: 320px) {
     body {
-        justify-content: start; /* Default value. */
+        justify-content: start;
     }
 }
