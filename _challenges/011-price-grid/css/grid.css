@@ -17,7 +17,7 @@ body {
 
 @media (max-width: 720px) {
     body {
-        justify-content: start;
+        margin: auto;
     }
 
     .grid {
@@ -36,5 +36,11 @@ body {
 
     .why {
         border-bottom-left-radius: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        justify-content: start;
     }
 }

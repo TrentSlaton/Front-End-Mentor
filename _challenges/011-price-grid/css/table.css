@@ -29,8 +29,8 @@ main {
 }
 
 .price > span {
-    vertical-align: middle;
     display: table-cell;
+    vertical-align: middle;
     padding-left: 0.5rem;
 }
 

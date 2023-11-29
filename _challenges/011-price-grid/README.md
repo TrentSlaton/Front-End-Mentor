@@ -10,4 +10,4 @@ This challenge implements several layout methods: table, float, position, flexbo
 
 # TODO
 
-Implement dynamic layout switcher with blurbs explaining dynamics of each layout technique.
+Implement dynamic layout switcher with blurbs explaining dynamics of each layout technique. Clean it up, make it great.
