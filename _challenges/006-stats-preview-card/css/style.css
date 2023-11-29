@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 
 :root {
-    --color-accent: hsla(277, 64%, 61%, 0.4);
     --color-card-background: hsl(244, 38%, 16%);
     --color-main-background: hsl(233, 47%, 7%);
+    --color-accent: hsla(277, 64%, 61%, 0.4);
     --color-white: hsl(0, 0%, 100%);
     --color-white-alpha-1: hsla(0, 0%, 100%, 0.75);
     --color-white-alpha-2: hsla(0, 0%, 100%, 0.6);
@@ -17,7 +17,7 @@
 }
 
 body {
-    min-height: 100svh;
+    min-height: 100vh;
     background-color: var(--color-main-background);
 }
 
@@ -76,8 +76,8 @@ body {
 
 .overlay {
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     background: var(--color-accent);
@@ -92,4 +92,16 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     object-fit: cover;
+}
+
+@media (max-width: 365px) {
+    .stats_blurb p {
+        font-size: x-small;
+    }
+}
+
+@supports (min-height: 100svh) {
+    body {
+        min-height: 100svh;
+    }
 }

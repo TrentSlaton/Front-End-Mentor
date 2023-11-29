@@ -51,8 +51,8 @@ main {
         /* order: -1; */
         height: 50vh;
         max-height: 200px;
-        border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .image_section > img {
@@ -63,7 +63,7 @@ main {
     }
 
     .overlay {
-        border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 }

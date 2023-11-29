@@ -1,4 +1,4 @@
-/* A mess. I cannot seem to get a proper float layout due to the use of postion on the overlay... float is just bad for layouts generaly I think. */
+/* A mess. I cannot seem to get a proper float layout due to the use of postion on the overlay... float is just bad for layouts generaly I think. The issue is that I cannot figure out how to synchronize the heights of .stats_section and .image_section. */
 
 .stats_card {
     margin: auto;
@@ -6,15 +6,8 @@
 
 .stats_section,
 .image_section {
-    width: 50%;
-}
-
-.stats_section {
     float: left;
-}
-
-.image_section {
-    float: right;
+    width: 50%;
 }
 
 .companies,
@@ -22,6 +15,14 @@
 .queries {
     float: left;
     margin-right: 2rem;
+}
+
+@media (max-width: 800px) {
+    .companies,
+    .templates,
+    .queries {
+        margin-right: 1rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -57,5 +58,13 @@
     .overlay {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .companies,
+    .templates,
+    .queries {
+        margin-right: 0.5rem;
     }
 }
