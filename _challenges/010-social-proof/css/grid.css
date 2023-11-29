@@ -1,0 +1,60 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "shoutout stars"
+        "review review";
+    gap: 2rem;
+}
+
+.shoutout {
+    grid-area: shoutout;
+}
+
+.stars {
+    grid-area: stars;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.starcard {
+    height: 3.25rem;
+}
+
+.starcard2 {
+    justify-self: center;
+}
+
+.starcard3 {
+    justify-self: end;
+}
+
+.starcard > span {
+    margin-left: 1rem;
+}
+
+.review {
+    grid-area: review;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 16rem;
+    gap: 1rem;
+}
+
+.review_card1 {
+    align-self: start;
+}
+
+.review_card2 {
+    align-self: center;
+}
+
+.review_card3 {
+    align-self: end;
+}
+
+/* TODO: Mobile */

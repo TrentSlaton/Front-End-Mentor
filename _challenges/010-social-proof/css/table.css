@@ -35,5 +35,47 @@ main {
     display: table-cell;
 }
 
-@media (max-width: 1024px) {
-}
+/* TODO: Mobile */
+
+/* @media (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .shoutout {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .shoutout > h2,
+    .shoutout > p {
+        width: 100%;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    .shoutout > p {
+        margin: auto;
+    }
+
+    .stars {
+        display: block;
+        width: 100%;
+    }
+    .starcard {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .starcard > span {
+        display: block;
+    }
+    .review,
+    .review_card {
+        display: block;
+        margin: auto;
+    }
+} */
