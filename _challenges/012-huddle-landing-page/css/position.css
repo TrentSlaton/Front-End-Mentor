@@ -4,19 +4,18 @@ main {
 
 .content {
     position: relative;
-    /* overflow: hidden; */
 }
 
 .mockups {
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
 }
 
 .blurb {
     position: absolute;
-    top: 0;
     left: 400px;
+    top: 0;
     width: 400px;
     margin-left: 1rem;
 }
@@ -39,7 +38,6 @@ main {
         width: 85vw;
         min-width: 300px;
         margin: auto;
-        /* margin-left: 0; */
     }
 
     .blurb > h1 {
