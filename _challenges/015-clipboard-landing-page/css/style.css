@@ -23,8 +23,7 @@
 }
 
 body {
-    min-height: 100svh;
-    background-image: url(images/bg-header-desktop.png);
+    background-image: url(../img/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -142,8 +141,8 @@ a:hover {
 }
 
 .feature1__stats > img {
-    overflow: hidden;
     justify-self: end;
+    overflow: hidden;
 }
 
 .feature1__stats__stack {
@@ -286,10 +285,10 @@ footer > img {
 
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "link1 link3 link5"
         "link2 link4 link4";
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -318,8 +317,9 @@ footer > img {
     gap: 2rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 675px) {
     body {
+        min-width: 300px;
         background-image: url(images/bg-header-mobile.png);
     }
 
@@ -386,7 +386,8 @@ footer > img {
     }
 
     .feature1_stats__stack__item > p {
-        width: 30ch;
+        width: 100%;
+        max-width: 40ch;
         color: var(--grayish-blue);
         font-size: 1.01rem;
         line-height: 1.5em;
