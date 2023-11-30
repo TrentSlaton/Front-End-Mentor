@@ -1,3 +1,5 @@
+# Clipboard Landing Page
+
 ![live demo screenshot of clipboard landing page](/assets/img/015-clipboard-landing-page-big.gif)
 
 live demo: [link](https://trentslaton.github.io/Front-End-Mentor/_challenges/015-clipboard-landing-page/index.html)
@@ -6,6 +8,6 @@ challenge: [link](https://www.frontendmentor.io/challenges/clipboard-landing-pag
 
 _An elegant landing page in a single-column layout displaying the product on multiple devices, clickable download links that change styling on hover, product features, industry consumers and a footer with links to more information._
 
-# TODO
+## TODO
 
-layouts, fix
+layouts, fix reactivity at medium screen widths
