@@ -32,17 +32,39 @@ body {
     grid-area: card5;
 }
 
-@media (max-width: 1200px) {
-    /* Responsiveness needs work... */
+.card_bio {
+    display: grid;
+    grid-template-areas:
+        "pic name"
+        "pic verified";
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+}
+
+.card_bio > img {
+    grid-area: pic;
+}
+
+.card_bio > h2 {
+    grid-area: name;
+}
+
+.card_bio > h3 {
+    grid-area: verified;
+}
+
+@media (max-width: 1100px) {
     .grid {
         display: block;
         width: 85vw;
+        min-width: 300px;
         margin: min(1rem, 1vh) auto;
     }
 
     .card {
         padding: 1rem;
         box-shadow: none;
+        margin: auto;
         margin-bottom: 1rem;
     }
 }
