@@ -8,4 +8,4 @@ _A stylized progress meter representing consumed vs. available storage in a clou
 
 # TODO
 
-clickable icon links, layout
+clickable icon links, mobile, multi-layout, dot
